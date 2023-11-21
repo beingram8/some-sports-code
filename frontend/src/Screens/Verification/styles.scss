@@ -1,0 +1,82 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.headerCon {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: colors.$layout-primary-color;
+}
+
+.HTitle {
+  font-size: sizes.$large-font-size;
+  color: colors.$layout-white-color;
+  text-align: center;
+  font-family: colors.$slaztone-font-family;
+  letter-spacing: "3px";
+  cursor: pointer;
+}
+
+.successInfoCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.iconDivVF {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.verifyText {
+  margin-top: 20px;
+  font-family: segoeui;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.verifyTextMessage {
+  margin-top: 10px;
+  font-family: segoeui;
+  font-size: 26px;
+  text-align: center;
+}
+
+.goTextStyle {
+  font-family: segoeui;
+  font-weight: bold;
+}
+
+.margin20Div {
+  margin-top: 20px;
+}
+
+.successInfoStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10;
+}
+.emailVerificationP {
+  text-align: center;
+  padding: 10px;
+  font-family: Bungee;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+.emailContentDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}

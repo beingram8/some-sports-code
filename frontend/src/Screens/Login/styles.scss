@@ -1,0 +1,53 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+
+.loginmodalcontent {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginmodalinputtext {
+  border: 1px solid #d9d9d9;
+
+  height: 30px !important;
+  padding: 6px 15px;
+  font-size: 15px !important;
+  border-radius: 20px !important;
+  caret-color: black;
+}
+
+.loginmodalinputtext:focus {
+  outline: none !important;
+  box-shadow: 0 0 3px #ddd;
+}
+
+.loginmodalortext {
+  font-size: 14px;
+  color: #838080;
+  padding: 0px 3px 2px 3px;
+  font-family: segoeui;
+  flex: 4;
+  text-align: center;
+}
+
+.loginDivider {
+  background-color: #d9d9d9;
+  height: 1px;
+  flex: 5;
+}
+
+.loginmodalsignuptext {
+  color: #D92B34;
+}
+
+.loginmodalforgotpassword {
+  margin-top: 12px;
+  font-size: 13.5px;
+  font-weight: bold;
+  color: #D92B34;
+  font-family: segoeui;
+  cursor: pointer;
+}

@@ -1,0 +1,230 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.paymentDialog {
+  padding: 0px !important;
+  width: 350px;
+  // background-color: aqua;
+}
+
+.paymentHeaderBG {
+  height: 70px;
+  background: linear-gradient(to right, #ed0f1b, #aa111a);
+  padding: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.buttonDivCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerTextStylePayment {
+  font-size: 20px;
+  font-family: Bungee;
+  color: #ffffff;
+  line-height: 1.5em;
+  text-align: center;
+
+  @media screen and(max-width: 450px) {
+    font-size: 18px;
+  }
+
+  @media screen and(max-width: 350px) {
+    font-size: 16px;
+  }
+}
+
+.paymentmodalclosebutton {
+  position: absolute;
+  height: 70px;
+  width: 50px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paymentmodalclosebuttonimage {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.buttonStylePayment {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+  background-color: #ed0f18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonTextStylePayment {
+  color: #fff;
+  font-size: 16;
+  font-family: segoeui;
+  font-weight: 600;
+}
+
+.cardFieldTitleStyle {
+  font-size: 16px;
+  font-family: segoeui;
+  font-weight: 600;
+  color: #656565;
+}
+
+.cardFieldDivStyle {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-bottom: 10px;
+  margin-top: 15px;
+}
+
+.fullwidthPayment {
+  width: 100%;
+}
+
+.cardContentcontainer {
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: scroll;
+}
+
+.cardContentcontainerAddNew {
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  min-width: 250px;
+  margin: 20px 7px 40px 10px;
+  box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+    0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+.noCardAvailableDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.cardCenterALign {
+  display: flex;
+  padding: 15px;
+  border-radius: 5px;
+  width: 100%;
+  // margin-top: 20px;
+  flex-direction: column;
+  box-shadow: 0px 1px 5px 0px rgba(100, 100, 100, 0.6);
+}
+
+.cardIconStyle {
+  height: 20px;
+  width: 20px;
+}
+
+.cardNumberTextStyle {
+  margin-left: 10px;
+  font-size: 16px;
+  font-family: segoeui;
+  color: #484848;
+}
+
+.carListItemDiv {
+  // cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.cardOtherDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardNameStyle {
+  font-family: segoeui;
+  font-size: 16px;
+  font-weight: 600;
+  color: #484848;
+}
+
+.cardNoStyle {
+  font-family: segoeui;
+  font-size: 16px;
+  color: #484848;
+}
+
+.defaultCardTextStyle {
+  font-family: segoeui;
+  font-size: 13px;
+  color: #484848;
+}
+
+.nameOnCardStyle {
+  border: 1px solid #ed0f1b;
+  height: 35px !important;
+  padding-left: 10px;
+  font-size: 15px !important;
+  border-radius: 5px;
+  font-family: segoeui;
+}
+
+.nameOnCardStyle:focus {
+  outline: none !important;
+  box-shadow: 0 0 3px #ed0f18;
+}
+
+@media screen and(max-width: 420px) {
+  .cardContentcontainer {
+    width: calc(100% - 40px);
+  }
+
+  .paymentDialog {
+    padding: 0px !important;
+    width: 300px;
+  }
+
+  .headerTextStylePayment {
+    width: 150px;
+  }
+}
+
+@media screen and(max-width: 370px) {
+  .paymentDialog {
+    padding: 0px !important;
+    width: 250px;
+  }
+
+  .cardNoStyle {
+    font-size: 13px;
+  }
+
+  .cardNameStyle {
+    font-size: 13px;
+  }
+
+  .defaultCardTextStyle {
+    font-size: 12px;
+  }
+}
+
+@media screen and(max-width: 319px) {
+  .paymentDialog {
+    padding: 0px !important;
+    width: 220px;
+  }
+}

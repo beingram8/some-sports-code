@@ -1,0 +1,347 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.container {
+  position: relative;
+  box-shadow: 0px 0px 8px 2px rgba(41, 41, 41, 0.25);
+
+  @include wrapper.container;
+  background-color: colors.$layout-primary-color;
+
+  @media screen and (max-width: 639px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.rightarrowicon {
+  margin-right: 10px;
+  height: 15px !important;
+  width: 15px !important;
+  color: #888;
+}
+
+.drawertexts {
+  font-size: 20px;
+  font-family: segoeui;
+  padding-bottom: 2px;
+  color: #656565;
+  padding-right: 5px;
+
+  @media screen and (max-width: 639px) {
+    font-size: 15px;
+  }
+}
+
+// @keyframes fadeInrightArrow {
+//   0% {
+//     opacity: 0.3;
+//   }
+//   100% {
+//     visibility: visible;
+//     opacity: 1;
+//   }
+// }
+
+@keyframes fadeIntexts {
+  0% {
+    opacity: 0.3;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.drawericonstextscontainer:hover {
+  .drawertexts {
+    font-size: 22px !important;
+    color: #f00;
+    animation: 1s fadeIntexts;
+
+    @media screen and (max-width: 639px) {
+      font-size: 18px !important;
+    }
+  }
+
+  .rightarrowicon {
+    height: 20px !important;
+    width: 20px !important;
+    margin-right: 5px;
+    color: #f00;
+    // animation: 1s fadeInrightArrow;
+  }
+
+  .drawericons {
+    height: 33px !important;
+    width: 33px !important;
+
+    @media screen and (max-width: 639px) {
+      height: 30px !important;
+      width: 30px !important;
+    }
+  }
+}
+
+.drawericons {
+  height: 25px;
+  width: 25px;
+}
+
+.addIconHeader {
+  width: 25px;
+  height: 25px;
+
+  @media screen and(max-width: 450px) {
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.MuiPopover-paper {
+  right: 14%;
+  left: unset !important;
+  width: 370px;
+  margin-top: 50px;
+
+  @media screen and (max-width: 1280px) {
+    right: 7%;
+  }
+
+  @media screen and (max-width: 640px) {
+    right: 15px;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotatereverse {
+  0% {
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  100% {
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+}
+
+.menuProfileImg {
+  width: 70px;
+  border: 1px solid #707070;
+  height: 70px;
+  opacity: 1;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.headernotification {
+  color: #ffffff;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.eventTextStyle {
+  font-family: Bungee;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 550px) {
+  .header__title {
+    font-size: 20px !important;
+  }
+
+  .loginTExtHeader {
+    font-size: 15px !important;
+  }
+
+  .headerbackspaceiconstyle {
+    height: 35px !important;
+  }
+
+  .headernotification {
+    width: 22px !important;
+    height: 22px !important;
+  }
+
+  .eventTextStyle {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .menuProfileImg {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+  }
+}
+
+.loginTExtHeader {
+  font-family: segoeui;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+// .drawer .MuiBackdrop-root {
+//   margin-top: 65px !important;
+// }
+
+// .drawer .MuiDialog-paper {
+//   margin: 65px 32px 0px 32px !important;
+// }
+
+.MuiButtonBase-root {
+  cursor: default !important;
+}
+
+.headerBackIcon {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  // justify-content: space-between;
+  // background-color: #ed0f1b;
+  // @media screen and (min-width: sizes.$screen-sm) {
+  //   padding: 0 7%;
+  // }
+  // @media screen and (min-width: sizes.$screen-xl) {
+  //   padding: 0 14%;
+  // }
+}
+
+.animatequize {
+  animation: 2s fadeIn infinite;
+}
+
+.badgeCountDiv {
+  background-color: #353535;
+  border-radius: 20px;
+  height: 12px;
+  width: 12px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -7px;
+  right: -5px;
+
+  @media screen and(max-width: 450px) {
+    height: 15px;
+    width: 15px;
+    padding: 4px;
+  }
+}
+
+.badgeCountStyle {
+  color: white;
+  font-size: 14px;
+  font-family: segoeui;
+
+  @media screen and(max-width: 450px) {
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.headerbackspaceiconstyle {
+  font-size: 40px !important;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header {
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: colors.$layout-primary-color;
+
+  .leftContainer {
+    width: 20%;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .MuiList-padding {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .titleContainer {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+
+    .header__title {
+      font-size: sizes.$large-font-size;
+      color: colors.$layout-white-color;
+      text-align: center;
+      font-family: colors.$slaztone-font-family;
+      letter-spacing: "3px";
+    }
+  }
+
+  .rightContainer {
+    width: 20%;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: sizes.$screen-sm) {
+  .header {
+    padding: 0;
+  }
+}
+
+.app-icon {
+  width: 70px;
+  height: 70px;
+}

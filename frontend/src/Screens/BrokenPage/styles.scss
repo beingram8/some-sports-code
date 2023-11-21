@@ -1,0 +1,81 @@
+@use '../../Styles/core/wrapper';
+@use '../../Styles/core/sizes';
+@use '../../Styles/global/colors';
+
+.blankpagemaincontainer {
+  height: calc(100% - 65px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 30px;
+}
+
+.blankpagenotavailable {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: segoeui;
+  padding-top: 50px;
+  color: #444444;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+
+.blankpagesecondlinecontainer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.blankpagebrokentext {
+  font-size: 19px;
+  font-weight: bold;
+  color: #454545;
+  font-family: segoeui;
+  letter-spacing: 0.8px;
+}
+
+.blankpagebrokentextlink {
+  font-size: 19px;
+  font-weight: bold;
+  color: #3058d0;
+  font-family: segoeui;
+  letter-spacing: 0.8px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  .blankpagenotavailable {
+    font-size: 22px !important;
+  }
+
+  .blankpagebrokentext {
+    font-size: 16px;
+  }
+
+  .blankpagebrokentextlink {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .blankpagenotavailable {
+    font-size: 18px !important;
+  }
+
+  .blankpagebrokentext {
+    font-size: 14px !important;
+  }
+
+  .blankpagebrokentextlink {
+    font-size: 14px !important;
+  }
+
+  .blankpagemaincontainer {
+    padding: 0px 15px;
+  }
+}
+
+.blankPageDiv2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

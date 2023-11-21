@@ -1,0 +1,399 @@
+@use '../../Styles/core/wrapper';
+@use '../../Styles/core/sizes';
+@use '../../Styles/global/colors';
+
+.mainRAteNewContainer {
+  @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+  }
+}
+
+.rateNewmaindiv {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.rateNewtext {
+  font-size: 35px;
+  font-family: Bungee;
+  color: #333;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 450px) {
+    font-size: 30px;
+    margin-left: 10px;
+  }
+}
+
+.tabstyleNew {
+  margin-top: 20px;
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+}
+
+.tabbuttonstyleNew {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 7px;
+}
+
+.tabbuttontextNew {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: segoeui;
+  text-align: center;
+  padding: 20px 0px;
+
+  @media screen and(max-width: 450px) {
+    font-size: 18px;
+  }
+}
+
+.favteamTextNew {
+  font-family: segoeui;
+  font-size: 16px;
+  font-weight: 600;
+  color: #484848;
+}
+
+.dividerStyleNew {
+  background-color: #484848;
+  height: 1px;
+  margin-top: 3px;
+}
+
+.columnStyle {
+  display: flex;
+  flex-direction: column;
+}
+
+.favTeamFlag {
+  width: 70px;
+  height: 70px;
+}
+
+.favTeamContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.dateTimeDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stadiumNewStyle {
+  text-align: center;
+  font-size: 13px;
+  font-family: segoeui;
+  font-weight: 600;
+  color: #656565;
+  padding: 0px 15px;
+
+  @media screen and(max-width: 350px) {
+    font-size: 11px;
+    margin: 0px 5px;
+  }
+}
+
+.scoreStyleNew {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: segoeui;
+}
+
+.teamNameStyleNew {
+  text-align: center;
+  // margin-top: 20px;
+  font-size: 17px;
+  font-family: segoeui;
+  color: #484848;
+  width: 100px;
+}
+
+.watchOnStyle {
+  text-align: center;
+  margin: 10px 20px;
+  // margin-top: 10px;
+  // margin-bottom: 10px;
+  color: #ed0f1b;
+  border-bottom: 1px solid #ed0f1b;
+  // margin-left: 20px;
+  // margin-right: 20px;
+  font-family: segoeui;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+
+  @media screen and(max-width: 350px) {
+    font-size: 11px;
+  }
+}
+
+.buttonStyleNew {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+  background-color: #ed0f1b;
+}
+
+.buttonStyleNewOutline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ed0f1b;
+}
+
+.buttonTextStyleNewWhite {
+  color: white;
+  font-family: Bungee;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.buttonTextStyleNewRed {
+  color: #ed0f1b;
+  font-family: Bungee;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.otherTeamScoreNew {
+  font-size: 40px;
+  font-family: segoeui;
+  color: #262626;
+  font-weight: bolder;
+
+  @media screen and (max-width: 730px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 550px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 390px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 370px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 360px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 15px;
+  }
+}
+
+.otherTeamName {
+  margin-left: 10px;
+  font-size: 22px;
+  font-family: segoeui;
+  color: #262626;
+  font-weight: 600;
+
+  @media screen and (max-width: 550px) {
+    font-size: 18px;
+    margin-left: 0px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+    margin-left: 0px;
+  }
+
+  @media screen and (max-width: 410px) {
+    font-size: 14px;
+    margin-left: 0px;
+  }
+  @media screen and (max-width: 350px) {
+    font-size: 12px;
+    margin-left: 0px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 10px;
+    margin-left: 0px;
+  }
+}
+
+.otherTeamFlag {
+  width: 80px;
+  height: 80px;
+
+  @media screen and (max-width: 705px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: 570px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 50px;
+    height: 50px;
+  }
+
+  @media screen and (max-width: 300px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.otherTeamDtls {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  // width: 200px;
+  width: 180px;
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+    width: 150px;
+  }
+
+  @media screen and (max-width: 400px) {
+    flex-direction: column;
+    width: 120px;
+  }
+}
+.otherTeamDtlsContainer1 {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  width: 600px;
+
+  @media screen and (max-width: 1800px) {
+    width: 500px;
+  }
+
+  @media screen and (max-width: 860px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 840px) {
+    width: 380px;
+  }
+
+  @media screen and (max-width: 705px) {
+    width: 350px;
+  }
+
+  @media screen and (max-width: 570px) {
+    width: 320px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 270px;
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 170px;
+  }
+
+  @media screen and (max-width: 370px) {
+    width: 150px;
+  }
+
+  @media screen and (max-width: 360px) {
+    width: 140px;
+  }
+
+  // @media screen and (max-width: 350px) {
+  //   width: 140px;
+  // }
+
+  @media screen and (max-width: 320px) {
+    width: 120px;
+  }
+}
+
+.otherTeamDtlsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media screen and(max-width: 450px) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.voteOtherMatchesTitle {
+  font-family: Bungee;
+  font-size: 25px;
+  color: #353535;
+  letter-spacing: 1.8px;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 450px) {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+}
+
+.RNDiv1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.RNhrStyle {
+  width: 100%;
+  height: 1px;
+  background-color: #e8e8e8;
+  border: 0px;
+  margin: 20px 0px;
+}
+
+.RNDiv2 {
+  display: flex;
+  justify-content: space-between;
+}

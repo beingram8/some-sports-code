@@ -1,0 +1,41 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.titleStyleCA {
+  font-family: Bungee;
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.messageStyleCA {
+  font-family: segoeui;
+  font-size: 16px;
+  color: #484848;
+}
+
+.okBtnDivCA {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.okTextStyleCA {
+  font-size: 16px;
+  font-family: segoeui;
+  font-weight: bold;
+  color: #484848;
+}
+
+.mainDialogCAlert {
+  width: 100%;
+}
+
+.AlertCancelBtn {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.AlertOkayBtn {
+  cursor: pointer;
+}

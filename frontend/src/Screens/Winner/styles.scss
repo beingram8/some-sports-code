@@ -1,0 +1,381 @@
+@use '../../Styles/core/wrapper';
+@use '../../Styles/core/sizes';
+@use '../../Styles/global/colors';
+
+.Prize2 {
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  overflow: auto;
+}
+
+.Achivements {
+  font-size: 35px;
+  font-family: Bungee;
+  color: #333;
+  line-height: 1.5em;
+  padding-right: 20px;
+}
+
+.achievementscontainer {
+  margin: 25px 0px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.winnercaraousalcontainer {
+  padding: 0px 1px;
+}
+
+.tokenTextStyle {
+  font-family: segoeui;
+  font-weight: 600;
+  font-size: 25px;
+  color: #656565;
+}
+
+.carousel .carousel-status {
+  text-shadow: none !important;
+  color: transparent !important;
+}
+
+.HorizontalItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px 15px 0px;
+}
+
+.winnerhorizontalitems {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.Boldtext {
+  font-size: 25px;
+  font-family: Bungee;
+  color: #333;
+  line-height: 1.5em;
+}
+
+.winnermaindiv {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+.winnercoinimage {
+  width: 30px !important;
+  height: 30px;
+}
+
+.prizecontainer {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.carousel .control-dots .dot {
+  transition: opacity 0.25s ease-in;
+  opacity: 1 !important;
+  filter: alpha(opacity=30);
+  box-shadow: none !important;
+  background: #fff;
+  border-radius: 10px !important;
+  width: 16px !important;
+  height: 7px !important;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 3px !important;
+  border: 1px solid #ed0f18;
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+  opacity: 1;
+  background-color: #ed0f1b;
+}
+
+.carousel .control-dots .dot.selected {
+  width: 32px !important;
+}
+
+.carousel .thumbs-wrapper {
+  margin: 0px !important;
+  overflow: hidden;
+}
+
+.winnersubmaindiv {
+  width: 100%;
+}
+
+.winnerpapercontainer {
+  margin-bottom: 30px !important;
+}
+
+.winnerpapercontainer1 {
+  margin-bottom: 30px !important;
+  margin-right: 2.2vw;
+}
+
+.winnerpaper {
+  width: 22.5vw;
+  // height: 12.5vw;
+  border-radius: 15px !important;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.amount {
+  font-size: 25px;
+  font-weight: bold;
+  font-family: segoeui;
+  letter-spacing: 1.68;
+  color: #707070;
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 1600px) {
+  .winnerpapercontainer1 {
+    margin-right: 2.9vw;
+  }
+
+  .winnerpaper {
+    width: 22vw;
+    border-radius: 15px !important;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .winnerpaper {
+    width: 26vw;
+  }
+
+  .winnerpapercontainer1 {
+    margin-right: 3.9vw;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .Boldtext {
+    font-size: 20px;
+  }
+
+  .Achivements {
+    font-size: 30px;
+  }
+
+  .amount {
+    font-size: 20px !important;
+  }
+
+  .winnercoinimage {
+    width: 28px;
+    height: 28px;
+  }
+
+  .winnercaraousalcontainer {
+    height: 21vw;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .winnerpapercontainer1 {
+    margin-right: 5.4vw;
+  }
+
+  .winnercaraousalcontainer {
+    height: 22vw;
+  }
+
+  .amount {
+    font-size: 17px !important;
+    padding-left: 5px;
+  }
+
+  .winnercoinimage {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .winnerprizecontainer {
+    padding-bottom: 0px;
+  }
+
+  .winnerpaper {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .amount {
+    font-size: 15px !important;
+  }
+
+  .winnercoinimage {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .winnerpapercontainer1 {
+    margin-right: 2.5vw;
+  }
+
+  .achievementscontainer {
+    margin: 10px 0px;
+  }
+
+  .tokenTextStyle {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+
+  .winnerpaper {
+    width: 30vw;
+  }
+
+  .winnercaraousalcontainer {
+    height: 25vw;
+  }
+
+  .amount {
+    font-size: 18px !important;
+    padding-left: 5px;
+  }
+
+  .winnercoinimage {
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .Achivements {
+    font-size: 24px !important;
+    margin-left: 15px;
+  }
+
+  .tokenTextStyle {
+    font-size: 15px;
+  }
+
+  .HorizontalItem {
+    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .Boldtext {
+    font-size: 20px;
+  }
+
+  .Prize {
+    overflow: auto;
+    margin: 0px 15px 0px 15px;
+  }
+
+  .winnerhorizontalitems {
+    padding-top: 5px;
+  }
+
+  .winnerpapercontainer {
+    margin-bottom: 10px !important;
+  }
+}
+
+@media screen and (max-width: 549px) {
+  .winnerpaper {
+    width: 44vw;
+  }
+
+  .winnercoinimage {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .winnercaraousalcontainer {
+    height: 31vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .winnercaraousalcontainer {
+    height: 32vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .winnerpaper {
+    width: calc(100vw - 30px);
+  }
+
+  .winnerpaper2 {
+    width: calc(100vw - 150px);
+    height: 35vw;
+    border-radius: 15px !important;
+    margin-right: 15px;
+  }
+
+  .winnercoinimage {
+    width: 25px !important;
+    height: 25px !important;
+  }
+
+  .Boldtext {
+    font-size: 20px;
+  }
+
+  .winnercaraousalcontainer {
+    height: 55vw;
+  }
+
+  .Achivements {
+    font-size: 30px !important;
+  }
+
+  .tokenTextStyle {
+    font-size: 15px !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .winnercaraousalcontainer {
+    height: 56vw;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .winnercaraousalcontainer {
+    height: 60vw;
+  }
+
+  .achievementscontainer {
+    flex-direction: column;
+  }
+
+  .Achivements {
+    padding: 0px;
+  }
+
+  .tokenTextStyle {
+    padding-top: 5px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 275px) {
+  .winnerpaper2 {
+    width: calc(100vw - 60px);
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .winnercaraousalcontainer {
+    height: 65vw;
+  }
+}

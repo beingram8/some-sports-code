@@ -1,0 +1,70 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.cButtonStyleB {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #1D1D1D;
+  position: relative;
+  bottom: 15px;
+}
+
+.googleButtonIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.editProfile {
+  background-color: #ed0f1b;
+  border: 1px solid #ed0f1b;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4;
+  border-radius: 5px;
+}
+
+.cButtonStyleOutlinedB {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 25px;
+}
+
+.cBtnTextStyle {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 450px) {
+    font-size: 14px;
+  }
+
+  @media screen and(max-width: 360px) {
+    bottom: 5px;
+  }
+}
+
+.cBtnTextStyleOutlined {
+  font-size: 16px;
+  color: #ed0f1b;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 450px) {
+    font-size: 14px;
+  }
+}

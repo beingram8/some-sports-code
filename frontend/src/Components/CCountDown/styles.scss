@@ -1,0 +1,11 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.countDownTextSty {
+  font-size: 18px;
+  font-family: seguibl;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  color: #fff;
+}

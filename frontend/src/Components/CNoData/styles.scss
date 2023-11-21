@@ -1,0 +1,32 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.teamlistnodatafoundcontainer {
+  height: 100% !important;
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamlistnodatafoundtext {
+  font-size: 20px;
+  color: #353535;
+  font-weight: bold;
+  padding-top: 30px;
+
+  @media screen and(max-width: 450px) {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+}
+
+.teamlistnodatafoundimage {
+  width: 200px;
+
+  @media screen and(max-width: 450px) {
+    width: 150px;
+  }
+}

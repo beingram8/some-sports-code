@@ -1,0 +1,234 @@
+.Headingmain {
+  font-family: "Bungee";
+  font-size: 35px;
+  color: #333;
+  line-height: 1.5em;
+
+  @media screen and(max-width:880px) {
+    font-size: 22px;
+  }
+
+  @media screen and(max-width:380px) {
+    font-size: 18px;
+  }
+}
+
+.teasingroot {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.postscroll {
+  height: calc(100% - 140px);
+  overflow: auto;
+  margin-top: 8px;
+}
+
+.post_header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 5px 5px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+
+  @media screen and(max-width:1000px) {
+    width: 90%;
+  }
+
+  @media screen and(max-width:639px) {
+    height: 50px;
+  }
+}
+
+.postheader_right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.user_div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.user_img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+
+  @media screen and(max-width:639px) {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.user_name {
+  margin: 0px 10px;
+  font-family: "segoeui";
+  color: #585858;
+  font-weight: bold;
+  font-size: 20px;
+
+  @media screen and(max-width:639px) {
+    font-size: 18px;
+  }
+}
+
+.post_img {
+  width: 50%;
+  object-fit: cover;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  box-sizing: border-box;
+
+  @media screen and(max-width:1000px) {
+    width: 90%;
+  }
+
+  @media screen and(max-width:550px) {
+    height: 400px;
+  }
+}
+
+.caption {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  background-color: #ffffff;
+  padding: 5px 5px;
+  box-sizing: border-box;
+
+  @media screen and(max-width:1000px) {
+    width: 90%;
+  }
+}
+
+.likes_comments {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  border-left: 1px solid #ebebeb;
+  border-right: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  background-color: #ffffff;
+  padding: 5px 5px;
+  box-sizing: border-box;
+
+  @media screen and(max-width:1000px) {
+    width: 90%;
+  }
+}
+
+.chat {
+  height: 24px;
+  width: 24px;
+  margin-right: 8px;
+  cursor: pointer;
+
+  @media screen and(max-width:500px) {
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.chatmain {
+  display: flex;
+  justify-content: center;
+  margin-right: 24px;
+}
+
+.post_time {
+  color: #656565;
+  font-family: "segoeui";
+  font-size: 14px;
+  font-weight: bold;
+
+  @media screen and(max-width:639px) {
+    font-size: 12px;
+  }
+}
+
+.post_caption {
+  color: #777777;
+  font-family: "segoeui";
+  font-weight: bold;
+}
+
+.post_details {
+  font-family: "segoeui";
+  color: #ed0f1b;
+  font-weight: bold;
+}
+
+.addpostmain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px 0px;
+  height: 60px;
+
+  @media screen and(max-width:880px) {
+    margin: 0px 20px;
+  }
+}
+
+.addpost {
+  border: 1px solid #ed0f1b;
+  border-radius: 4px;
+  padding: 10px 20px;
+  color: #ed0f1b;
+  font-family: "Bungee";
+  line-height: 1.5em;
+  cursor: pointer;
+
+  @media screen and(max-width:700px) {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  @media screen and(max-width:560px) {
+    font-size: 10px;
+  }
+
+  @media screen and(max-width:455px) {
+    padding: 6px 8px;
+  }
+  @media screen and(max-width:640px) {
+    margin-right: 20px;
+  }
+}
+
+.dialogstyle {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  position: absolute;
+  background-color: #fff;
+  right: 25px;
+}
+
+.menuoption {
+  color: #656565 !important;
+  font-size: 22 !important;
+  cursor: pointer !important;
+}
+
+.tabview {
+  padding: 20px 0px;
+}
+
+.tabmain {
+  margin: 0;
+}

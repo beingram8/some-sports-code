@@ -1,0 +1,38 @@
+Options +FollowSymlinks
+RewriteEngine On
+
+# deal with adminfromitaly first
+RewriteCond %{REQUEST_URI} ^/(adminfromitaly)
+RewriteRule ^adminfromitaly/assets/(.*)$ backend/web/assets/$1 [L]
+RewriteRule ^adminfromitaly/css/(.*)$ backend/web/css/$1 [L]
+RewriteRule ^adminfromitaly/js/(.*)$ backend/web/js/$1 [L]
+RewriteRule ^adminfromitaly/media/(.*)$ backend/web/media/$1 [L]
+RewriteRule ^adminfromitaly/plugins/(.*)$ backend/web/plugins/$1 [L]
+
+RewriteCond %{REQUEST_URI} !^/backend/web/(assets|css)/ 
+RewriteCond %{REQUEST_URI} ^/(adminfromitaly) 
+RewriteRule ^.*$ backend/web/index.php [L]
+
+
+RewriteCond %{REQUEST_URI} ^/(assets|css) 
+RewriteRule ^assets/(.*)$ frontend/web/assets/$1 [L]
+RewriteRule ^css/(.*)$ frontend/web/css/$1 [L]
+RewriteRule ^js/(.*)$ frontend/web/js/$1 [L] 
+RewriteRule ^images/(.*)$ frontend/web/images/$1 [L]
+RewriteRule ^media/(.*)$ frontend/web/media/$1 [L]
+RewriteRule ^ass/(.*)$ frontend/web/ass/$1 [L]
+RewriteRule ^uploads/(.*)$ uploads/$1 [L]
+RewriteRule ^img_assets/(.*)$ img_assets/$1 [L]
+
+RewriteCond %{REQUEST_URI} !^/(frontend|backend)/web/(assets|css)/ 
+RewriteCond %{REQUEST_URI} !index.php
+RewriteCond %{REQUEST_FILENAME} !-f [OR]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^.*$ frontend/web/index.php
+
+# Deny accessing below extensions
+<Files ~ "(.json|.lock|.git)">
+Order allow,deny
+Deny from all
+</Files>
+

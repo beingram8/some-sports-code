@@ -1,0 +1,18 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.signupmodalcontent {
+  // padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  // padding-right: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

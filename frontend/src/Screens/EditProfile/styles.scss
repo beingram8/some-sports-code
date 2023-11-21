@@ -1,0 +1,342 @@
+@use "../../Styles/core/wrapper";
+@use "../../Styles/core/sizes";
+@use "../../Styles/global/colors";
+
+.editprofilemaindiv {
+  display: flex;
+  justify-content: center;
+  overflow: auto !important;
+  height: 100% !important;
+}
+
+.editprofilemaindiv1 {
+  display: flex;
+  justify-content: center;
+}
+
+.divStyle {
+  margin-top: 25px;
+}
+
+.editprofiletext {
+  padding-top: 20px;
+  font-size: 35px;
+  color: #333;
+}
+
+input[type="date"] {
+  -webkit-appearance: none !important;
+}
+
+.titleStyleEP {
+  font-family: segoeui;
+  font-weight: bold;
+  font-size: 19;
+  color: #656565;
+}
+
+.profiletext {
+  font-size: 22px;
+  margin-top: 35px;
+  color: #333;
+}
+
+.editprofilesubmaindiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.editprofileerrormsg {
+  color: #ed0f18;
+  font-size: 12px;
+}
+
+.editprofileinputtext {
+  border: 1px solid #ed0f1b;
+  height: 35px !important;
+  width: 350px;
+  padding-left: 10px;
+  font-size: 15px !important;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: segoeui;
+  caret-color: #ed0f1b;
+}
+
+.editprofileinputtext1 {
+  border: 1px solid #ed0f1b;
+  height: 35px !important;
+  width: 350px;
+  padding-left: 10px;
+  font-size: 15px !important;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: segoeui;
+  caret-color: #ed0f1b;
+}
+
+.editprofiledob {
+  border: 1px solid #ed0f1b;
+  height: 37px;
+  width: 342px;
+  padding-left: 10px;
+  font-size: 15px !important;
+  padding-right: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.editprofileinputtext:focus {
+  outline: none !important;
+  box-shadow: 0 0 3px #ed0f18;
+}
+
+.editprofiledob:focus {
+  outline: none !important;
+  box-shadow: 0 0 3px #ed0f18;
+}
+
+.editprofiledropdownselect {
+  border: 1px solid #ed0f1b !important;
+  height: 39px;
+  width: 364px !important;
+  font-size: 15px !important;
+  border-radius: 5px !important;
+  margin-top: 10px;
+  font-family: segoeui;
+  padding: 0px 10px !important;
+  caret-color: #ed0f1b;
+}
+
+.css-wuf9n-ReactDropdownSelect:focus,
+.css-wuf9n-ReactDropdownSelect:focus-within {
+  outline: 0;
+  box-shadow: 0 0 3px #ed0f18 !important;
+}
+
+.editprofiletext {
+  font-family: Bungee;
+  color: #353535;
+  line-height: 1.5em;
+}
+
+.profiletext {
+  font-family: Bungee;
+  color: #353535;
+  line-height: 1.5em;
+}
+
+.changepasswordtext {
+  font-family: Bungee;
+  font-size: 22px;
+  color: #353535;
+  padding-top: 30px;
+  line-height: 1.5em;
+}
+
+p {
+  font-weight: 500;
+  font-size: 18px;
+  color: #666;
+}
+
+@media screen and (max-width: 1650px) {
+  .editprofileinputtext {
+    width: 300px;
+  }
+
+  .editprofileinputtext1 {
+    width: 294px;
+  }
+
+  .editprofiledob {
+    width: 292px;
+  }
+
+  .editprofiledropdownselect {
+    width: 314px !important;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .editprofileinputtext {
+    width: 250px;
+  }
+
+  .editprofileinputtext1 {
+    width: 250px;
+  }
+
+  .editprofiledob {
+    width: 242px;
+  }
+
+  .editprofiledropdownselect {
+    width: 264px !important;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .editprofileinputtext {
+    width: 300px;
+  }
+
+  .editprofileinputtext1 {
+    width: 300px;
+  }
+
+  .editprofiledob {
+    width: 292px;
+  }
+
+  .editprofiledropdownselect {
+    width: 314px !important;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .editprofileinputtext {
+    width: 260px;
+  }
+
+  .editprofileinputtext1 {
+    width: 260px;
+  }
+
+  .editprofiledob {
+    width: 252px;
+  }
+
+  .editprofiledropdownselect {
+    width: 274px !important;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .editprofileinputtext {
+    width: calc(100% - 14px);
+  }
+
+  .editprofileinputtext1 {
+    width: calc(100% - 20px);
+  }
+
+  .editprofiledob {
+    width: calc(100% - 22px);
+  }
+
+  .editprofiledropdownselect {
+    width: 100% !important;
+  }
+
+  .divStyle {
+    width: 46% !important;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .editprofilemaindiv {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .editprofilemaindiv1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .editprofileinputtext {
+    width: calc(100% - 14px);
+  }
+
+  .editprofileinputtext1 {
+    width: calc(100% - 20px);
+  }
+
+  .editprofiledob {
+    width: calc(100% - 22px);
+  }
+
+  .editprofiledropdownselect {
+    width: calc(100%) !important;
+  }
+
+  .divStyle {
+    width: 100% !important;
+  }
+
+  .editprofiletext {
+    font-size: 25px;
+  }
+
+  .profiletext {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+
+  .changepasswordtext {
+    font-size: 16px;
+  }
+
+  .titleStyleEP {
+    font-size: 13px;
+  }
+}
+
+.documentbtnDiv {
+  margin: 20px 0px;
+  border: 1px solid #ed0f18;
+  width: 345px;
+  padding: 10px;
+  background-color: #ed0f18;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  @media screen and(max-width: 1650px) {
+    width: 294px;
+  }
+
+  @media screen and(max-width: 1440px) {
+    width: 244px;
+  }
+
+  @media screen and(max-width: 1280px) {
+    width: 294px;
+  }
+
+  @media screen and(max-width: 1200px) {
+    width: 254px;
+  }
+
+  @media screen and(max-width: 1050px) {
+    width: calc(46% - 20px);
+  }
+
+  @media screen and(max-width: 500px) {
+    width: calc(100% - 20px);
+  }
+}
+
+.documentSpan {
+  font-family: segoeui;
+  font-weight: 600;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+.editprofilemain {
+  height: calc(100% - 65px);
+  overflow: auto;
+}
+
+.editprofileborder {
+  border: 1px solid transparent;
+  background-color: transparent;
+}

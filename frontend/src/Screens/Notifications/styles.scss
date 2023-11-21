@@ -1,0 +1,161 @@
+@use '../../Styles/core/wrapper';
+@use '../../Styles/core/sizes';
+@use '../../Styles/global/colors';
+
+.notifDiv {
+  overflow: auto;
+  height: calc(100% - 65px);
+}
+
+.notifDiv1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.notifDiv3 {
+  position: fixed;
+  bottom: 0px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.notifDateTimeDiv {
+  width: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.notifTitleMessageDiv {
+  padding-left: 15px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.notifDiv12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+
+  @media screen and (max-width: 640px) {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.notifImageStyle {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+
+  @media screen and (max-width: 640px) {
+    height: 30px;
+    width: 30px;
+  }
+}
+
+.notificationtitletext {
+  font-size: 28px;
+  color: #484848;
+  font-weight: bold;
+  font-family: colors.$bungee-font-family;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 640px) {
+    font-size: 22px;
+  }
+}
+
+.arraydatastyle {
+  border-bottom: 1px solid rgba(136, 136, 136, 0.533);
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.itemtitlestyle {
+  font-size: 16px;
+  padding-right: 5px;
+  font-family: seguibl;
+  color: #484848;
+
+  @media screen and(max-width: 640px) {
+    font-size: 14px;
+  }
+}
+
+.messageNotifyStyle {
+  font-size: 16px;
+  margin-top: 5px;
+  font-family: segoeui;
+  color: #484848;
+
+  @media screen and(max-width: 640px) {
+    font-size: 14px;
+  }
+}
+
+.timeNotifyStyle {
+  font-size: 14px;
+  font-family: segoeui;
+  color: #484848;
+  text-align: "right";
+
+  @media screen and(max-width: 640px) {
+    font-size: 12px;
+  }
+}
+
+.notifymaindiv {
+  height: auto;
+  width: 100%;
+}
+
+.notifymaindivsub {
+  height: 100%;
+  border-radius: 0px;
+}
+
+.notificationscontainer {
+  overflow: auto;
+}
+
+.removeALlNotification {
+  font-size: 18px;
+  font-family: segoeuisl;
+  color: #ed0f1b;
+  text-decoration: underline;
+  cursor: pointer;
+
+  @media screen and(max-width: 640px) {
+    margin-right: 20px;
+  }
+
+  @media screen and(max-width: 450px) {
+    font-size: 14px;
+    margin-right: 15px;
+  }
+}
+
+.notificationTitleDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+
+  @media screen and(max-width: 640px) {
+    margin-left: 20px;
+  }
+}

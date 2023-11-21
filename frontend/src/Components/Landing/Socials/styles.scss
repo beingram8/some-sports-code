@@ -1,0 +1,61 @@
+@use "../../../Styles/core/sizes";
+@use "../../../Styles/core/wrapper";
+@use "../../../Styles/global/colors";
+
+.socialsContainer {
+  border: 2px solid #ed0f1b;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  height: max-content;
+  position: relative;
+  .iconButton {
+    outline: 0;
+    border: 0;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 18px;
+    height: 52px;
+    border-radius: 26px;
+    width: max-content;
+    background: #ed0f1b;
+    padding: 0px 30px 0px 64px;
+    position: absolute;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    transition: 0.3s;
+    &:hover {
+      background: #b80b14;
+    }
+  }
+  .pageImage {
+    max-width: 100%;
+    margin: auto;
+  }
+  .iconArea {
+    position: absolute;
+    background: #ffffff;
+    width: max-content;
+    border-radius: 50%;
+    left: 1px;
+    top: 1px;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .socialsContainer {
+    border: 3px solid #ed0f1b;
+    flex-direction: column;
+    .iconButton {
+      position: relative;
+      margin: 0;
+      bottom: -100px;
+    }
+  }
+}

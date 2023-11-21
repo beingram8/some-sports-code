@@ -1,0 +1,50 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.progressCon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.currentLevelText {
+  font-family: segoeuii;
+  font-size: 16px;
+  color: #484848;
+  font-weight: 400;
+}
+
+.progressbarMainCon {
+  height: 15px;
+  width: 100%;
+  background-color: whitesmoke;
+  border-radius: 40px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.progresstext {
+  color: white;
+  font-weight: 900;
+  font-size: 12px;
+  text-align: center;
+}
+
+.progresstext2 {
+  color: #f00;
+  font-weight: 900;
+  font-size: 12px;
+  text-align: center;
+  padding-left: 5px;
+}
+
+.Childdiv {
+  height: 100%;
+  background-color: #ed0f1b;
+  border-radius: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}

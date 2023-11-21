@@ -1,0 +1,256 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.successsubmaindialog {
+  padding: 0px !important;
+  width: 400px;
+}
+
+.successsubmaindialog2 {
+  padding: 0px !important;
+  height: 220px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.successdescriptiontext {
+  text-align: center;
+  font-size: 18px;
+}
+
+.successsubmaindialog2sub {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px 20px;
+}
+
+.heightWidth {
+  height: 100%;
+  width: 100%;
+}
+
+.centertext {
+  text-align: center;
+}
+
+.flexcenter {
+  display: flex;
+  align-items: center;
+}
+
+.successdiv {
+  height: calc(100% - 70px);
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.successheading {
+  height: 70px;
+  background: linear-gradient(to right, #ed0f1b, #aa111a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.successsmileyimage {
+  height: 100px;
+  width: 100px;
+}
+
+.successtrophyimage {
+  height: 120px;
+}
+
+.successtoppadding {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.successclose {
+  font-family: segoeui;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: none;
+}
+
+.successscore {
+  color: #333;
+  font-weight: bold;
+  font-family: segoeui;
+  letter-spacing: 0.5px;
+  font-size: 16px !important;
+}
+
+.successredfont {
+  color: #ed0f1b;
+  font-family: Bungee;
+  font-size: 22px;
+  line-height: 1.5em;
+}
+
+.successredfont2 {
+  color: #ed0f1b;
+  font-family: Bungee;
+  font-size: 22px;
+  padding-top: 10px;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.successtokenimage {
+  height: 20px;
+  padding-right: 5px;
+}
+
+.successclosebutton {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 35px;
+  margin-top: 30px !important;
+}
+
+.successtokencontainer {
+  display: flex;
+  align-items: center;
+}
+
+.successblackfont {
+  color: #333;
+  font-family: Bungee;
+  font-size: 22px;
+  line-height: 1.5em;
+}
+
+.successdescription {
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+  margin-top: 5px;
+  font-family: segoeui;
+}
+
+.successcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 5px 20px 5px;
+}
+
+.successquiztext {
+  font-family: Bungee;
+  color: #fff;
+  font-size: 28px;
+  line-height: 1.5em;
+}
+
+@media screen and (max-width: 415px) {
+  .successtrophyimage {
+    height: 100px;
+  }
+
+  .successquiztext {
+    font-size: 18px;
+  }
+
+  .successtokenimage {
+    height: 16px;
+  }
+
+  .successsubmaindialog {
+    width: 70vw;
+  }
+
+  .successredfont {
+    font-size: 18px;
+    padding: 0px 20px 0px 20px;
+  }
+
+  .successredfont2 {
+    font-size: 18px;
+  }
+
+  .successblackfont {
+    font-size: 18px;
+  }
+
+  .successsmileyimage {
+    height: 25vw;
+    width: 25vw;
+  }
+
+  .successscore {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .successredfont {
+    font-size: 15px;
+  }
+
+  .successscore {
+    font-size: 11px !important;
+  }
+
+  .successtoppadding {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .successredfont {
+    font-size: 12px;
+  }
+
+  .successblackfont {
+    font-size: 14px;
+  }
+
+  .successredfont2 {
+    font-size: 14px;
+  }
+
+  .successdescriptiontext {
+    font-size: 11px;
+  }
+
+  .successscore {
+    font-size: 10px !important;
+  }
+
+  .successtokenimage {
+    height: 13px;
+  }
+
+  .successquiztext {
+    font-size: 14.5px;
+  }
+}
+
+@media screen and (max-width: 260px) {
+  .successredfont {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-height: 605px) {
+  // .successtrophyimage {
+  //   height: 90px;
+  // }
+
+  .successsubmaindialog {
+    height: 85vh;
+  }
+}

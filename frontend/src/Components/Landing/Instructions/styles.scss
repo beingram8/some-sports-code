@@ -1,0 +1,71 @@
+@use "../../../Styles/core/sizes";
+@use "../../../Styles/core/wrapper";
+@use "../../../Styles/global/colors";
+
+.instructionsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 91%;
+  margin: auto;
+  margin-bottom: 100px;
+  .caption {
+    color: #ed0f1b;
+    font-size: 14px;
+    font-weight: 800;
+    margin: auto;
+    width: max-content;
+  }
+  .heading3 {
+    color: #333333;
+    font-size: 32px;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-family: "bungee";
+    text-transform: uppercase;
+  }
+  .instructionRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 80px;
+  }
+  .bulletPoint {
+    display: flex;
+    gap: 18px;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .bulletText {
+    color: #ed0f1b;
+    font-family: "bungee";
+    font-size: 48px;
+  }
+  .para {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .instructionsContainer {
+    width: 100%;
+    padding: 5%;
+    box-sizing: border-box;
+    .caption {
+      width: max-content;
+      max-width: 100%;
+      text-align: center;
+      font-size: 21px;
+    }
+    .heading3 {
+      font-size: 36px;
+      margin: 20px 0px;
+    }
+    .instructionRow {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

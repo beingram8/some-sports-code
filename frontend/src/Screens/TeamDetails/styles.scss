@@ -1,0 +1,635 @@
+@use '../../Styles/core/wrapper';
+@use '../../Styles/core/sizes';
+@use '../../Styles/global/colors';
+
+.playerContainer {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 20px;
+  background-color: #f6f6f6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: flex-start;
+
+  @media screen and (min-width: sizes.$screen-sm) {
+    padding: 0 7%;
+  }
+
+  @media screen and (min-width: sizes.$screen-xl) {
+    padding: 0 14%;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.playerImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.teamName {
+  color: #fff;
+  font-weight: medium;
+  font-size: 15px;
+  text-align: center;
+  font-family: segoeui;
+
+  @media screen and (max-width: 450px) {
+    font-size: 13px;
+  }
+}
+
+.teamDetailsDiv1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.matchHeaderText {
+  font-weight: bold;
+  color: #fff;
+  font-family: segoeui;
+  font-size: 13px;
+
+  @media screen and (max-width: 450px) {
+    font-size: 12px;
+  }
+}
+
+.playerImg {
+  width: 68px;
+  height: 68px;
+  cursor: pointer;
+  border-radius: 50px;
+
+  @media screen and (max-width: 639px) {
+    height: 45px !important;
+    width: 45px !important;
+  }
+
+  @media screen and (max-width: 480px) {
+    height: 40px !important;
+    width: 40px !important;
+  }
+}
+
+.playerImageDiv {
+  width: 100px;
+  padding: 10px 0px;
+  text-align: center;
+  overflow: hidden;
+
+  @media screen and (max-width: 480px) {
+    width: 80px !important;
+  }
+}
+
+.scoreStyle {
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Segoeui;
+
+  @media screen and (max-width: 450px) {
+    font-size: 30px;
+  }
+}
+
+.plusminusButtonStyle {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  border: 1px solid #484848;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slidercheckpoint {
+  font-size: 14px;
+  font-family: segoeui;
+  color: #484848;
+}
+
+.slidercheckpointDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.animatequizeTD {
+  animation: 2s fadeIn infinite;
+  text-align: center;
+}
+
+.plusminusTextStyle {
+  padding: 10px;
+  color: #484848;
+}
+
+.playerNameRating {
+  font-size: 18;
+  font-family: segoeui;
+  color: #484848;
+  font-weight: bold;
+  text-align: center !important;
+
+  @media screen and (max-width: 480px) {
+    font-size: 14px !important;
+  }
+}
+
+.playerNameRating2 {
+  font-size: 18;
+  font-family: segoeui;
+  color: #484848;
+  font-weight: bold;
+  text-align: center !important;
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px !important;
+  }
+}
+
+.playerPositionRating {
+  color: #484848;
+  font-family: segoeui;
+  font-size: 16px;
+  padding-top: 2;
+
+  @media screen and (max-width: 480px) {
+    font-size: 12px !important;
+  }
+}
+
+.playerNameRatingVote {
+  font-size: 22px;
+  font-family: Bungee;
+  color: #484848;
+  font-weight: 600;
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px !important;
+  }
+}
+
+.playerNameRatingDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sliderFunctionDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// player profile css
+.playerimage {
+  width: 800px;
+  height: 450px;
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
+.cutCorner {
+  position: relative;
+  // background-color: blue;
+  margin-top: 30px;
+}
+
+.cutCorner img {
+  display: block;
+}
+
+.cutCorner:before {
+  position: absolute;
+  right: -1px;
+  bottom: 0px;
+  content: "";
+  border-bottom: 60px solid transparent;
+  border-left: 800px solid transparent;
+}
+
+.cutCorner:after {
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  content: "";
+  border-bottom: 60px solid white;
+  border-left: 800px solid transparent;
+}
+
+@media screen and (max-width: 930px) {
+  .playerimage {
+    width: 80vw;
+    height: 48vw;
+  }
+
+  .cutCorner:before {
+    border-left: 80vw solid transparent;
+  }
+
+  .cutCorner:after {
+    border-left: 80vw solid transparent;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .playername {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .playername {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .playername {
+    font-size: 18px;
+  }
+}
+
+// new css for player details screen
+.otherTeamDtlsContainerpp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media screen and(max-width: 450px) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+.otherTeamDtlsContainerpp1 {
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  display: flex;
+  width: 600px;
+
+  @media screen and (max-width: 1800px) {
+    width: 500px;
+  }
+
+  @media screen and (max-width: 860px) {
+    width: 450px;
+  }
+
+  @media screen and (max-width: 840px) {
+    width: 380px;
+  }
+
+  @media screen and (max-width: 705px) {
+    width: 350px;
+  }
+
+  @media screen and (max-width: 570px) {
+    width: 320px;
+  }
+
+  @media screen and (max-width: 500px) {
+    width: 270px;
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 170px;
+  }
+
+  @media screen and (max-width: 370px) {
+    width: 150px;
+  }
+
+  @media screen and (max-width: 360px) {
+    width: 140px;
+  }
+
+  @media screen and (max-width: 320px) {
+    width: 120px;
+  }
+}
+
+.otherTeamDtlspp {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  width: 180px;
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+    width: 150px;
+  }
+
+  @media screen and (max-width: 400px) {
+    flex-direction: column;
+    width: 120px;
+  }
+}
+
+.otherTeamFlagpp {
+  width: 80px;
+  height: 80px;
+
+  @media screen and (max-width: 705px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: 570px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media screen and (max-width: 450px) {
+    width: 50px;
+    height: 50px;
+  }
+
+  @media screen and (max-width: 300px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.otherTeamNamepp {
+  margin-left: 10px;
+  font-size: 22px;
+  font-family: segoeui;
+  color: #262626;
+  font-weight: 600;
+
+  @media screen and (max-width: 550px) {
+    font-size: 18px;
+    margin-left: 0px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+    margin-left: 0px;
+  }
+
+  @media screen and (max-width: 410px) {
+    font-size: 14px;
+    margin-left: 0px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 12px;
+    margin-left: 0px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 10px;
+    margin-left: 0px;
+  }
+}
+
+.dividerpp {
+  background-color: #484848;
+  height: 1px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.titleStylePP {
+  font-size: 20px;
+  font-family: seguibl;
+  color: #484848;
+
+  @media screen and (max-width: 500px) {
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 15px;
+  }
+}
+
+.spaceBtnStylePP {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.playerImageStylePP {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+
+.playerDetailsDivPP {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}
+
+.playerDetailsContainer {
+  margin: 20px 0px;
+  flex-direction: row;
+  display: flex;
+}
+
+.centerTitleStylePP {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ppmainContainer {
+  height: "calc(100% - 65px)";
+  left: "0px";
+  right: "0px";
+
+  @media screen and(max-width: 639px) {
+    padding: 0% 3%;
+  }
+}
+
+.zeroPadding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.flexWidth100 {
+  display: flex;
+  width: 100%;
+}
+
+.TDDiv1 {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TDDiv2 {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TDDiv3 {
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexWidth100Column {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.TDDiv4 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tdTabDiv1 {
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 55px;
+  margin-bottom: 1px;
+  background-color: #ffffff;
+}
+
+.tdTabDiv2 {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.tabtitleTD {
+  font-weight: bold;
+  font-family: segoeui;
+}
+
+.winnerButtonDiv1 {
+  cursor: pointer;
+  display: flex;
+  width: 50%;
+  min-width: 60px;
+  padding: 8px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 6px;
+  margin-top: 10px;
+  flex-direction: column;
+  box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+    0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+
+  @media screen and(max-width: 450px) {
+    width: 70%;
+  }
+}
+
+.viewStyleTD {
+  font-size: 10px;
+  color: #ed0f1b;
+  font-family: segoeui;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.matchInfoDiv1 {
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  align-items: center;
+  background-color: #ed0f18;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.matchInfoDiv2 {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.TDteamLogo {
+  width: 50px;
+  height: 50px;
+  padding: 23px 0px;
+}
+
+.TDDiv5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.TDDiv6 {
+  padding: 8px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.timerIconTD {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+  object-fit: contain;
+}
+
+.alreadyVotedTextTD {
+  font-size: 15px;
+  color: #fff;
+  font-family: seguibl;
+}
+
+.TDDiv7 {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.TDDiv8 {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 135px);
+  flex-direction: column;
+  overflow: auto;
+}
+
+.margin20TD {
+  margin: 20px 0px;
+}

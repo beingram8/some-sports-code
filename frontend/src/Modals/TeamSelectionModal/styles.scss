@@ -1,0 +1,101 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.teamselectionmaindialog .MuiDialogContent-root {
+  padding-top: 0px !important;
+}
+
+.subteamselectionmodal {
+  height: 450px;
+  position: relative;
+}
+
+.tsteamlogotextcontainer {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5px;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.tsteamname {
+  font-size: 14px;
+  font-family: segoeui;
+  padding-top: 10px;
+}
+
+.tsteamsimagestyle {
+  height: 60px;
+  width: 60px;
+}
+
+.tsteamcontainer {
+  padding: 10px;
+  display: flex;
+  height: calc(100% - 65px);
+  overflow: auto;
+  justify-content: center;
+  width: 600px !important;
+}
+
+.teamselectionsubmaindiv {
+  height: calc(100% - 70px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.teamselectionheading {
+  height: 70px;
+  background: linear-gradient(to right, #ed0f1b, #aa111a);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (max-width: 640px) {
+    padding-right: 50px;
+    padding-left: 10px;
+  }
+
+  @media screen and (max-width: 425px) {
+    justify-content: flex-start;
+  }
+}
+
+.teamselectinomodalclosebutton {
+  position: absolute;
+  height: 70px;
+  width: 50px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teamselectionclosebuttonimage {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.teamselectionheadingtext {
+  font-size: 24px;
+  font-family: Bungee;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5em;
+
+  @media screen and (max-width: 425px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 18px;
+  }
+}

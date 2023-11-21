@@ -1,0 +1,181 @@
+@use '../../Styles/core/wrapper';
+@use '../../Styles/core/sizes';
+@use '../../Styles/global/colors';
+
+.myteamhorizontalitems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0px;
+
+  @media screen and (min-width: sizes.$screen-sm) {
+    padding: 0 7%;
+  }
+  @media screen and (min-width: sizes.$screen-xl) {
+    padding: 0 14%;
+  }
+  @media screen and (max-width: 640px) {
+    padding: 0px 15px;
+  }
+}
+
+.myteammaindiv {
+  height: calc(100% - 65px);
+  overflow: auto;
+}
+
+.myteamtitle {
+  font-family: Bungee;
+  font-size: 35px;
+  color: #353535;
+  line-height: 1.5em;
+}
+
+.myteamselectedimage {
+  height: 55px;
+  width: 55px;
+}
+
+.myteamplayerimage {
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+}
+
+.myteamplayerlist {
+  display: flex;
+}
+
+.myteamplayername {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555555;
+  font-family: segoeui;
+}
+
+.myteamnamerole {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.jerseyDivContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  margin-right: 10px;
+
+  @media screen and(max-width: 450px) {
+    width: 30px;
+  }
+}
+
+.myteamjerseyno {
+  font-size: 20px;
+  color: #c0c0c0;
+  font-weight: bold;
+  font-family: segoeui;
+
+  @media screen and(max-width: 450px) {
+    font-size: 16px;
+  }
+}
+
+.myteamplayerrole {
+  font-size: 14px;
+  font-family: segoeui;
+  color: #656565;
+}
+
+.myteampoints {
+  font-size: 15px;
+  color: #656565;
+  font-weight: bold;
+  font-family: segoeui;
+}
+
+.myteamplayerlistcontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (min-width: sizes.$screen-sm) {
+    padding: 10px 7%;
+  }
+  @media screen and (min-width: sizes.$screen-xl) {
+    padding: 10px 14%;
+  }
+  @media screen and (max-width: 640px) {
+    padding: 10px 15px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .myteamtitle {
+    font-size: 30px;
+  }
+
+  .myteamselectedimage {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .myteamtitle {
+    font-size: 26px;
+  }
+
+  .myteamselectedimage {
+    height: 35px;
+    width: 35px;
+  }
+
+  .myteamplayerimage {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+  }
+
+  .myteamplayername {
+    font-size: 14px;
+  }
+
+  .myteamplayerrole {
+    font-size: 12px;
+  }
+
+  .myteampoints {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .myteamtitle {
+    font-size: 20px;
+  }
+
+  .myteamselectedimage {
+    height: 28px;
+    width: 28px;
+  }
+
+  .myteamplayerimage {
+    height: 34px;
+    width: 34px;
+    border-radius: 17px;
+  }
+
+  .myteamplayername {
+    font-size: 12px;
+  }
+
+  .myteamplayerrole {
+    font-size: 10px;
+  }
+
+  .myteampoints {
+    font-size: 11px;
+  }
+}

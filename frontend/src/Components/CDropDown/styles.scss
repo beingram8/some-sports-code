@@ -1,0 +1,48 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.mainContainerDD {
+  width: 100%;
+  background-color: #fff;
+}
+
+.DDDiv1 {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.DDDiv2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoStyleDD {
+  width: 20px;
+  height: 20px;
+}
+
+.DDDiv3 {
+  height: 200px;
+  overflow: scroll;
+}
+
+.DDDiv4 {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.DDDiv5 {
+  display: flex;
+  align-items: center;
+}
+
+.DDDiv6 {
+  margin-top: 5px;
+  margin-left: 10px;
+}

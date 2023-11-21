@@ -1,0 +1,22 @@
+@use './core/sizes';
+@use './core/wrapper';
+@use './global/colors';
+
+.CommonContainer {
+  @include wrapper.container;
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.OtherCommonContainer {
+  @include wrapper.container;
+}
+
+.MainContainer {
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  overflow: auto;
+}

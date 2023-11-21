@@ -1,0 +1,142 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+$buttonpadding:5px 20px;
+
+.cButtonStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ed0f1b;
+  position: relative;
+  bottom: 15px;
+}
+
+.googleButtonIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.editProfile {
+  background-color: #ed0f1b;
+  border: 1px solid #ed0f1b;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4;
+  border-radius: 5px;
+}
+
+.cButtonStyleOutlined {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ed0f1b;
+}
+
+.fbButtonStyle {
+  font-weight: bold;
+  font-size: 14px;
+  font-family: segoeui;
+  text-transform: inherit;
+
+  @media screen and(max-width: 450px) {
+    font-size: 13px;
+    margin-left: 20px;
+  }
+}
+
+.googleButtonStyle {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: segoeui;
+  text-transform: inherit;
+  color: #000;
+  font-weight: bold;
+
+  @media screen and(max-width: 450px) {
+    font-size: 13px;
+    margin-left: 10px;
+  }
+}
+
+.socialButtonStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 37px;
+  color: #444444;
+  position: relative;
+  cursor: pointer;
+  border-radius: 25px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: white;
+  border-color: #d9d9d9;
+  padding: $buttonpadding;
+  font-weight: bold;
+}
+
+.socialFBButtonStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 37px;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  border-radius: 25px;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #385185;
+  border-color: #385185;
+  margin-bottom: 10px;
+  padding: $buttonpadding;
+  font-weight: bold;
+
+}
+
+.socialIconDivStyle {
+  height: 100%;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  // margin-right: ;
+  border-radius: 2px;
+  display: flex;
+}
+
+.cBtnTextStyle {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 450px) {
+    font-size: 14px;
+  }
+
+  @media screen and(max-width: 360px) {
+    bottom: 5px;
+  }
+}
+
+.cBtnTextStyleOutlined {
+  font-size: 16px;
+  color: #ed0f1b;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 450px) {
+    font-size: 14px;
+  }
+}

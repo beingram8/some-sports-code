@@ -1,0 +1,397 @@
+.help-block {
+    color: #f10d08 !important;
+    font-size: .9rem !important;
+    font-weight: 400 !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.grid-overflow {
+    overflow: scroll;
+}
+
+.grid-width {
+    width: 200%;
+}
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #6993ff !important;
+    padding: 27px;
+    z-index: 11;
+}
+
+.facetoface {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.heightMin {
+    height: 60vh;
+}
+
+.heightMin .tab-content>.active {
+    height: 24vh !important;
+}
+
+.grid-view .table-bordered td,
+.table-bordered th {
+    border: none !important;
+}
+
+.grid-view .table thead td,
+.table thead th a {
+    color: #b5b5c3 !important;
+}
+
+.input-daterange .input-group-addon {
+    padding: 9px 12px !important;
+}
+
+.input-group.input-daterange .input-group-addon {
+    background-color: #ddd !important;
+}
+
+.datetimepicker .switch {
+    display: table-footer-group !important;
+}
+
+.time-button {
+    cursor: pointer;
+}
+
+.selected-border {
+    border: 2px solid !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fff !important;
+}
+
+.grid-view .table-bordered td,
+.table-bordered tr {
+    border-bottom: 1px solid #e0e3e6!important;
+    vertical-align: middle;
+}
+
+.grid-view .table thead td,
+.table thead th {
+    font-weight: 600;
+    font-size: 10px;
+    border-bottom-width: 1px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #b5b5c3;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+
+/* .agent-panel thead{
+    display: none;
+} */
+
+span.fa.fa-star.star-checked {
+    color: #dea810;
+}
+
+.incident .form-control:disabled,
+.form-control[readonly] {
+    background-color: #ffffff;
+    opacity: 1;
+    border: none;
+    padding: 0;
+}
+
+label.time-button,
+label.time-button-disabled {
+    width: 180px;
+    border: 1px solid #ddd;
+    color: #1e1f21;
+    border-radius: 1px;
+    /* margin-right: 6px; */
+    padding: 10px;
+    font-weight: 400 !important;
+    font-size: 12px;
+}
+
+.time-button .form-group label {
+    font-weight: 400px !important;
+}
+
+.kanban-board-header {
+    padding: 5px 13px !important;
+}
+
+.kanban-container .kanban-board .kanban-board-header .kanban-title-board {
+    font-size: 10px !important;
+}
+
+.time-button input[type=radio] {
+    display: none;
+}
+
+.bo {
+    border-bottom: 3px solid #6993ff!important;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+#myTab .nav-text {
+    color: #000 !important;
+}
+
+#myTab .nav-icon i {
+    color: #000 !important;
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 100% !important;
+}
+
+.online-appointment {
+    border: 3px solid #2bd600dd
+}
+
+.rule-value-container select {
+    width: 234px !important;
+}
+
+.rule-value-container input {
+    width: 234px !important;
+}
+
+.rule-operator-container {
+    width: 20%;
+    text-align: center;
+    ;
+}
+
+.form-inline {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+    ;
+}
+
+.h-800px {
+    overflow-y: scroll;
+}
+
+iframe {
+    height: 420px !important;
+}
+
+.row.fileupload-buttonbar .btn.btn-success {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+.red-border {
+    border: 1px solid red !important;
+}
+
+.black-border {
+    border: 1px solid !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 37px !important;
+}
+
+.select2-container--krajee .select2-selection--single {
+    padding: 7px 18px 0px 5px;
+}
+
+.select2-container .select2-selection--single .select2-selection__rendered {
+    display: block;
+    padding-left: 8px;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 12px !important;
+    padding-top: 2px !important;
+}
+
+.select2-container--krajee .select2-selection--single .select2-selection__arrow {
+    height: 35px !important;
+}
+
+.fileinput-button {
+    padding-top: 30px;
+}
+
+.fileinput-button input {
+    position: relative !important;
+    font-size: 12px !important;
+}
+
+.fileupload-progress {
+    display: none !important;
+}
+
+.help-block-error {
+    color: #f64e60 !important;
+    font-size: .9rem !important;
+    font-weight: 400 !important;
+}
+
+.login.login-1 .login-aside {
+    background-repeat: no-repeat, no-repeat;
+    background-position: 100% 100%, 0 0;
+    background-size: 50%, 100%;
+}
+
+.breadcrumbs a {
+    color: #fff !important;
+}
+
+.m-left-8 {
+    margin-left: -8px;
+}
+
+ul.pagination a {
+    padding: 9px 18px;
+    border: 1px solid #ddd;
+    color: #000;
+}
+
+ul.pagination .disabled {
+    display: none;
+}
+
+ul.pagination .active a {
+    background-color: #1363ce;
+    border: 1px solid #1263d1;
+    color: #fff;
+}
+
+.grid-view thead tr {
+    color: #000;
+}
+
+.grid-view thead tr a {
+    color: #000;
+}
+
+.position .card.card-custom>.card-header {
+    min-height: 50px;
+}
+
+.required label:after {
+    color: red;
+    content: " *";
+}
+
+.care-checkbox input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+.care-checkbox label {
+    margin-bottom: 0px !important;
+}
+
+.btn-group-sm>.btn i,
+.btn.btn-sm i {
+    font-size: 1.3rem;
+    padding-right: 0px !important;
+}
+
+.menu-active {
+    color: #fff!important;
+    background-color: rgba(255, 255, 255, .1) !important;
+    border-color: transparent !important;
+}
+
+.h420 {
+    height: 420px;
+}
+
+.department .form-group {
+    margin-bottom: 0px;
+}
+
+.d-flex.flex-column.align-items-start.w-100.app-box {
+    font-size: 10px;
+    font-weight: normal !important;
+}
+
+.kanban-board .kanban-drag {
+    padding: 3px !important;
+}
+
+.kanban-container .kanban-board .kanban-drag .kanban-item {
+    border-radius: 0px !important;
+}
+
+.kanban-item {
+    padding: 10px;
+    margin-bottom: 4px !important;
+}
+
+.kanban-container .kanban-board {
+    margin-right: 0px !important;
+}
+
+.kanban-container .col-md-3 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.kanban-container .kanban-board {
+    border-right: 1px solid #ccd3da !important;
+    border-radius: 0px !important;
+}
+
+.kanban-board .kanban-drag {
+    min-height: 0px !important;
+}
+
+.kanban-container .kanban-board .kanban-board-header {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.kanban ul.pagination a {
+    padding: 9px 18px;
+    border: 1px solid #ddd !important;
+    color: #fdfdfd !important;
+}
+
+.kanban-board .kanban-drag {
+    height: 210px !important;
+    overflow-y: scroll;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 600 !important;
+    color: #3f4254;
+}

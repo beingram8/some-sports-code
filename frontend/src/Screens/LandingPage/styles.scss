@@ -1,0 +1,28 @@
+@use "../../Styles/core/wrapper";
+@use "../../Styles/core/sizes";
+@use "../../Styles/global/colors";
+
+.landingPageContainer {
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+  padding: 0% 5%;
+  box-sizing: border-box;
+  .socialContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    width: 100%;
+    margin: 100px 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .landingPageContainer {
+    padding: 0;
+    .socialContainer {
+      gap: 180px;
+      margin: 100px 0px 180px 0px;
+    }
+  }
+}

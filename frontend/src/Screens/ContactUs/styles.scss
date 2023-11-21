@@ -1,0 +1,130 @@
+@use '../../Styles/core/wrapper';
+@use '../../Styles/core/sizes';
+@use '../../Styles/global/colors';
+
+.mainContactUsSubCon {
+  background-image: url("../../Assets/Images/ranking_web.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+}
+
+.contectUsTitle {
+  font-size: 30px;
+  font-family: Bungee;
+  font-weight: 600;
+  color: #353535;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 639px) {
+    margin-left: 15px;
+  }
+
+  @media screen and (max-width: 500px) {
+    font-size: 22px;
+  }
+}
+
+.contactInfoContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+}
+
+.divInfoUI {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
+}
+
+.contactUStextStyleCU {
+  font-size: 20px;
+  padding-bottom: 8px;
+  font-family: segoeui;
+  color: #656565;
+}
+
+.contectUsInputUI {
+  border: 1px solid #ed0f1b;
+  height: 35px !important;
+  width: none;
+  caret-color: #ed0f1b;
+  padding-left: 10px;
+  font-size: 15px !important;
+  margin-bottom: 12px;
+  border-radius: 3px;
+}
+
+.contectUsInputUI:focus {
+  outline: none !important;
+  box-shadow: 0 0 3px #ed0f18;
+}
+
+.ContactTextAreaCU:focus {
+  outline: none !important;
+  box-shadow: 0 0 3px #ed0f18;
+}
+
+.contactUsMessageDivCU {
+  display: flex;
+  width: 700px;
+  flex-direction: column;
+}
+
+.ContactTextAreaCU {
+  border: 1px solid #ed0f1b;
+  font-size: 15px !important;
+  margin-bottom: 13px;
+  border-radius: 3px;
+  width: none;
+  resize: none;
+  height: 112px;
+  caret-color: #ed0f1b;
+
+  @media screen and (max-width: 400px) {
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 825px) {
+  .contactInfoContainer {
+    width: 100%;
+  }
+
+  .contactUsMessageDivCU {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .contactInfoContainer {
+    padding: 0px 15px;
+    width: calc(100% - 30px);
+  }
+
+  .contactUStextStyleCU {
+    font-size: 16px;
+  }
+
+  .contactUsMessageDivCU {
+    padding: 0px 15px;
+    width: calc(100% - 30px);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contactInfoContainer {
+    flex-direction: column;
+    width: unset;
+  }
+
+  .contactUStextStyleCU {
+    font-size: 14px;
+  }
+}

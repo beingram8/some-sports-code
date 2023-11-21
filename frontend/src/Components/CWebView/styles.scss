@@ -1,0 +1,36 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.webviewTitle {
+  font-size: 30px;
+  font-family: Bungee;
+  line-height: 1.5em;
+  font-weight: 600;
+  color: #353535;
+}
+
+.mainComMargin {
+  margin: 25px 0px;
+}
+
+.MGB8 {
+  margin-bottom: 8px;
+}
+
+@media screen and (max-width: 639px) {
+  .webviewTitle {
+    font-size: 22px;
+    padding-left: 15px;
+  }
+
+  .cwebviewContent {
+    padding: 0px 15px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .webviewTitle {
+    font-size: 20px;
+  }
+}

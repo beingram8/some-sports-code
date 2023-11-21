@@ -1,0 +1,770 @@
+@use '../../Styles/core/wrapper';
+@use '../../Styles/core/sizes';
+@use '../../Styles/global/colors';
+
+.radiostream {
+  display: flex;
+  overflow: auto;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.radiostream2div {
+  display: flex;
+  overflow: auto;
+  margin-top: 20px;
+  padding: 0px 5px 0px 5px;
+}
+
+.tifastorycontainer {
+  position: relative;
+  text-align: center;
+}
+
+.tifaalltitletext {
+  font-family: Segoeui;
+  font-weight: 600;
+  font-size: 17px;
+  color: #353535;
+  overflow: hidden;
+}
+
+.tifaalltitletext2 {
+  font-family: Segoeui;
+  font-weight: 600;
+  font-size: 18px;
+  color: #353535;
+}
+
+.FIconSty {
+  width: 15px;
+  height: 15px;
+}
+
+.tifaalltitletextnews {
+  font-family: Segoeui;
+  font-weight: 600;
+  font-size: 15px;
+  color: #353535;
+  padding-bottom: 45px;
+  line-height: 20px;
+}
+
+.radiostream2 {
+  width: 100%;
+  padding: 15px 5px 0px 5px;
+}
+
+.news {
+  width: 100%;
+  padding: 15px 5px 15px 5px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.news1 {
+  width: 100%;
+  padding: 15px 5px 0px 5px;
+  overflow: hidden;
+}
+
+.greendotstyle {
+  height: 23px;
+  width: 23px;
+  border-radius: 15px;
+  background-color: #07f255;
+  position: absolute;
+  top: 7px;
+  right: 50px;
+  border: 2px solid #ed0f1b;
+}
+
+.cheers {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-size: 35px;
+  font-family: Bungee;
+  color: #353535;
+  line-height: 1.5em;
+}
+
+.tifaBoldtext {
+  font-size: 20px;
+  font-family: Bungee;
+  color: #353535;
+  line-height: 1.5em;
+}
+
+.tifaViewAlltext {
+  font-size: 18px;
+  font-family: Bungee;
+  color: #353535;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 450px) {
+    font-size: 14px;
+  }
+}
+
+.rightarrowicontifa {
+  margin-right: 10px;
+  color: #353535;
+
+  @media screen and(max-width: 450px) {
+    height: 20px !important;
+    width: 20px !important;
+  }
+}
+
+.tifaMaindiv {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.tifaPaper {
+  width: 150px;
+  height: 150px;
+  border-radius: 80px !important;
+  border: 3px solid #ed0f1b;
+  overflow: hidden;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.tifaPapersquare1 {
+  width: 22vw;
+  height: 10.5vw;
+  border-radius: 10px !important;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.paddingtopstyle {
+  padding-top: 15px;
+}
+
+.tifaiconbuttonstyle {
+  background-color: #fff !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tifaplayiconstyle {
+  color: #ed0f1b;
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.newstext {
+  font-size: 12px;
+  font-family: segoeui;
+  color: #555;
+  font-weight: bold;
+  line-height: 10px;
+  // background-color: #07f255;
+}
+
+.newstextcontainer {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 5px 5px 5px;
+  overflow: hidden;
+  width: 58%;
+  position: relative;
+}
+
+.papernewsstyle {
+  width: 22vw;
+  height: 126px;
+  border-radius: 7px !important;
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.papernewsstyle1 {
+  width: 22vw;
+  height: 126px;
+  border-radius: 7px !important;
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-right: 2.7vw;
+}
+
+.match {
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  width: 42%;
+  object-fit: cover;
+}
+
+.tifaalltitlepadding {
+  margin-top: 5px;
+  width: 22vw;
+  margin-bottom: 20px;
+}
+
+.likecommenticon {
+  height: 20px !important;
+  width: 20px !important;
+  color: #ed0f18;
+}
+
+.tifaalltitlepadding1 {
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+p {
+  color: #333;
+}
+
+div * {
+  scrollbar-width: none !important;
+  /* Firefox */
+  -ms-overflow-style: none !important;
+
+  /* IE 10+ */
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px !important;
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+}
+
+@media screen and (max-width: 1660px) {
+  .papernewsstyle1 {
+    margin-right: 2.6vw;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .papernewsstyle1 {
+    margin-right: 2.5vw;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .papernewsstyle1 {
+    margin-right: 2.4vw;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .radiostream {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .tifaBoldtext {
+    padding-left: 15px;
+  }
+
+  .news {
+    margin-top: 20px;
+    padding: 0px 15px;
+  }
+
+  .news1 {
+    height: 100% !important;
+    margin-top: 20px;
+  }
+
+  .MuiGrid-item .papernewsstyle {
+    width: 44.5vw !important;
+  }
+
+  .papernewsstyle1 {
+    width: 44.5vw !important;
+  }
+
+  .newstext {
+    font-size: 13px;
+  }
+
+  .tifaPaper {
+    border-radius: 40px !important;
+  }
+
+  .greendotstyle {
+    height: 12px !important;
+    width: 12px !important;
+    border-radius: 7px;
+    top: 4px !important;
+    right: 24px !important;
+    border: 2px solid #ed0f1b;
+  }
+
+  .radiostream2div {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .tifaPapersquare1 {
+    width: 280px !important;
+    height: 160px !important;
+    margin-right: 20px;
+  }
+
+  .tifaalltitlepadding {
+    width: 230px !important;
+    margin-bottom: 0px;
+  }
+
+  .cheers {
+    padding-top: 5px;
+    padding-left: 15px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .totalcomments {
+    font-size: 11px !important;
+  }
+
+  .newstext {
+    font-size: 11px !important;
+  }
+
+  .tifaalltitletextnews {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .tifaPapersquare1 {
+    width: 26.5vw;
+  }
+
+  .tifaalltitlepadding {
+    width: 26.5vw;
+  }
+
+  .papernewsstyle {
+    width: 26.5vw;
+  }
+
+  .papernewsstyle1 {
+    width: 26.5vw;
+  }
+
+  .tifaalltitletext2 {
+    font-size: 16px;
+  }
+
+  .tifaPapersquare1 {
+    height: 12.5vw;
+  }
+
+  .tifaPaper {
+    width: 100px !important;
+    height: 100px !important;
+    border-radius: 55px !important;
+  }
+
+  .greendotstyle {
+    height: 14px !important;
+    width: 14px !important;
+    border-radius: 10px;
+    top: 4px;
+    right: 48px !important;
+  }
+
+  .tifaalltitletext {
+    font-size: 15px;
+  }
+
+  .tifaalltitlepadding1 {
+    margin-top: 10px;
+    width: 106px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .papernewsstyle {
+    width: 40.5vw !important;
+  }
+
+  .papernewsstyle1 {
+    width: 40.5vw !important;
+  }
+}
+
+.totalcomments {
+  font-size: 12px;
+  padding-left: 5px;
+}
+
+@media screen and (max-width: 750px) {
+  .tifaalltitletextnews {
+    font-size: 13px !important;
+  }
+
+  .likecommenticon {
+    height: 17px !important;
+    width: 17px !important;
+  }
+
+  .papernewsstyle {
+    height: 110px;
+  }
+
+  .papernewsstyle1 {
+    height: 110px;
+  }
+
+  .totalcomments {
+    font-size: 10px !important;
+  }
+
+  .newstext {
+    font-size: 10px !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .tifaPapersquare1 {
+    width: 25.8vw;
+  }
+
+  .tifaalltitlepadding {
+    width: 25.8vw;
+  }
+
+  .tifaalltitlepadding1 {
+    width: 76px !important;
+    margin-right: 0px;
+  }
+
+  .tifaPaper {
+    border: 2px solid #ed0f1b;
+  }
+
+  .tifaalltitletext {
+    font-size: 12px;
+  }
+
+  .tifaPaper {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 40px !important;
+    margin-right: 25px;
+  }
+
+  .tifaalltitlepadding1 {
+    width: 70px;
+  }
+
+  .greendotstyle {
+    height: 12px !important;
+    width: 12px !important;
+    border-radius: 7px;
+    top: 4px !important;
+    right: 28px !important;
+    border: 2px solid #ed0f1b;
+  }
+
+  .newstext {
+    font-size: 11.5px;
+  }
+
+  .news {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tifaBoldtext {
+    font-size: 18px;
+  }
+
+  .cheers {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .MuiGrid-item .papernewsstyle {
+    width: 95vw !important;
+    margin-bottom: 20px;
+  }
+
+  .tifaalltitletext2 {
+    font-size: 14px;
+  }
+
+  .tifaalltitlepadding1 {
+    width: 60px !important;
+    margin-top: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-left: 0px;
+  }
+
+  .newstext {
+    font-size: 13px !important;
+  }
+
+  .tifaBoldtext {
+    font-size: 20px;
+  }
+
+  .tifaalltitletext {
+    font-size: 10px;
+  }
+
+  .tifaalltitletextnews {
+    font-size: 15px !important;
+    line-height: 20px;
+  }
+
+  .likecommenticon {
+    height: 20px !important;
+    width: 20px !important;
+  }
+
+  .totalcomments {
+    font-size: 12px !important;
+  }
+
+  .cheers {
+    font-size: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+  .radiostream {
+    margin-top: 10px;
+  }
+
+  .news {
+    margin-top: 15px;
+  }
+
+  .news1 {
+    margin-top: 10px;
+  }
+
+  .radiostream2div {
+    margin-top: 10px;
+  }
+
+  .tifaPaper {
+    width: 58px !important;
+    height: 58px !important;
+    border-radius: 30px !important;
+    border: 1px solid #ed0f1b;
+    margin-right: 15px;
+  }
+
+  .greendotstyle {
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 6px;
+    top: 2px !important;
+    right: 16px !important;
+    border: 1px solid #ed0f1b;
+  }
+
+  .tifaPapersquare1 {
+    height: 125px !important;
+    width: 230px !important;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .MuiGrid-item .papernewsstyle {
+    width: 100% !important;
+    margin-bottom: 10px;
+    // height: 110px;
+  }
+
+  .newstextcontainer {
+    margin: 5px 5px 12px 5px;
+  }
+
+  .news {
+    height: 100% !important;
+  }
+
+  .news .MuiGrid-item {
+    width: 100% !important;
+  }
+
+  .news1 {
+    height: 100% !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .newstextcontainer {
+    margin: 5px 5px 8px 5px;
+  }
+
+  .tifaalltitletextnews {
+    font-size: 12px !important;
+    line-height: 16px;
+  }
+
+  .newstext {
+    font-size: 10px !important;
+  }
+
+  .likecommenticon {
+    height: 16px !important;
+    width: 16px !important;
+  }
+
+  .totalcomments {
+    font-size: 10px !important;
+  }
+}
+
+.orderByMainDiv {
+  position: relative;
+}
+
+.orderbyDiv1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+}
+
+.orderbyDiv2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.flexCenterDiv {
+  display: flex;
+  align-items: center;
+}
+
+.orderbyDiv3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.orderbyDiv4 {
+  background-color: #ed0f18;
+  border-radius: 10px;
+  width: 10px;
+  height: 10px;
+}
+
+.marginLeft5UL {
+  margin-left: 5px;
+}
+
+.textFilterTitleUL {
+  font-family: seguibl;
+  color: #484848;
+}
+
+.paddingULDiv {
+  padding: 10px 0px;
+}
+
+.filterDiv1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 50%),
+    0px 3px 4px 0px rgb(0 0 0 / 50%), 0px 1px 8px 0px rgb(0 0 0 / 50%);
+}
+
+.newsListDiv1 {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+}
+
+.newsListDiv2 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+}
+
+.newsListDiv3 {
+  background-color: #dddddd;
+  height: 1px;
+  width: 100%;
+  margin: 5px 0px;
+}
+
+.newsListDiv4 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.newsListDiv5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.newsListDiv6 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.newsListDiv7 {
+  position: absolute;
+  bottom: 20px;
+  right: 3px;
+}
+
+.nodataFoundDivTF {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+.showmorecontainer {
+  background-color: "#ED0F18";
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,245 @@
+@use '../../Styles/core/wrapper';
+@use '../../Styles/core/sizes';
+@use '../../Styles/global/colors';
+
+.playerimage {
+  width: 800px;
+  height: 450px;
+  object-fit: contain;
+  background-color: #ffffff;
+}
+
+.playerprofilecontainer {
+  height: 100%;
+  overflow: auto;
+}
+
+.playerprofileteamimage {
+  height: 90px;
+  width: 90px;
+}
+
+.playerimagecontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.playerprofileinfo {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.playerprofilehorizontalitems {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.playerprofilegoalsvotes {
+  height: 35px;
+  border: 1px solid #f44;
+  border-radius: 5px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playerprofileiconstyle {
+  height: 20px;
+  width: 20px;
+}
+
+.playername {
+  font-size: 30px;
+  font-family: Bungee;
+  padding-bottom: 10px;
+  color: #353535;
+  line-height: 1.5em;
+}
+
+.playerprofession {
+  color: #ed0f18;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.goalsvotesstyle {
+  color: #ed0f18;
+  font-weight: bold;
+  font-size: large;
+}
+
+.goalsvotescontainer {
+  width: 30%;
+}
+
+.playedmatchesandrankcontainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.playerprofiledesctext {
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.playerprofiledesc {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+}
+
+.playedmatchesandranktext {
+  color: #666;
+  font-weight: bold;
+  font-family: segoeui;
+  font-size: 15px;
+}
+
+.playerprofileredboldtext {
+  font-size: 25px;
+  font-weight: 900;
+  color: #ed0f18;
+  padding-left: 20px;
+  padding-top: 4px;
+}
+
+.cutCorner {
+  position: relative;
+  // background-color: blue;
+  margin-top: 30px;
+}
+
+.cutCorner img {
+  display: block;
+}
+
+.cutCorner:before {
+  position: absolute;
+  right: -1px;
+  bottom: 0px;
+  content: "";
+  border-bottom: 60px solid transparent;
+  border-left: 800px solid transparent;
+}
+
+.cutCorner:after {
+  position: absolute;
+  right: -1px;
+  bottom: -1px;
+  content: "";
+  border-bottom: 60px solid white;
+  border-left: 800px solid transparent;
+}
+
+@media screen and (max-width: 930px) {
+  .playerimage {
+    width: 80vw;
+    height: 48vw;
+  }
+
+  .cutCorner:before {
+    border-left: 80vw solid transparent;
+  }
+
+  .cutCorner:after {
+    border-left: 80vw solid transparent;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .playername {
+    font-size: 25px;
+  }
+
+  .playerprofileteamimage {
+    height: 70px;
+    width: 70px;
+  }
+
+  .playerprofession {
+    font-size: 18px;
+  }
+
+  .goalsvotesstyle {
+    font-size: 15px;
+  }
+
+  .playerprofileredboldtext {
+    font-size: 20px;
+  }
+
+  .playerprofileiconstyle {
+    height: 16px;
+    width: 16px;
+  }
+
+  .playerprofilehorizontalitems {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .playerprofileinfo {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .playername {
+    font-size: 20px;
+  }
+
+  .playerprofession {
+    font-size: 15px;
+  }
+
+  .playerprofileteamimage {
+    height: 60px;
+    width: 60px;
+  }
+
+  .playerprofilegoalsvotes {
+    height: 30px;
+  }
+
+  .playedmatchesandranktext {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .playerprofileredboldtext {
+    padding-left: 10px;
+    padding-top: 4px;
+    font-size: 16px;
+  }
+
+  .goalsvotesstyle {
+    font-size: 15px;
+  }
+
+  .playedmatchesandranktext {
+    font-size: 12px;
+  }
+
+  .playername {
+    font-size: 18px;
+  }
+
+  .playerprofileiconstyle {
+    height: 14px;
+    width: 14px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .playerprofileteamimage {
+    height: 50px;
+    width: 50px;
+  }
+}

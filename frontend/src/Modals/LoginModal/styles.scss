@@ -1,0 +1,251 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.loginmodalsubmaindialog {
+  padding: 0px !important;
+  width: 350px;
+  height: 500px;
+}
+
+.loginmodalcontentcontainer {
+  height: calc(100% - 70px);
+  overflow: auto;
+  padding:20px;
+}
+
+.loginmodalsigninheading {
+  height: 70px;
+  background: linear-gradient(to right, #ed0f1b, #aa111a);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginmodalclosebutton {
+  position: absolute;
+  height: 70px;
+  width: 50px;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginmodalclosebuttonimage {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.loginBtnStyle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #ed0f1b;
+  // box-shadow: 0px 0px 2px 0.5px rgba(237, 15, 24, 1);
+  box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+    0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+.loginBtnTextStyle {
+  font-family: segoeui;
+  font-size: 16px;
+  color: #fff;
+}
+
+.loginmodalsignuptext {
+  font-size: 13.5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  // font-family: segoeui;
+  @media screen and(max-width: 450px) {
+    font-size: 14px;
+  }
+}
+
+.loginmodalnoaccounttext {
+  font-size: 13.5px;
+  cursor: pointer;
+  font-family: segoeui;
+
+  @media screen and(max-width: 450px) {
+    font-size: 14px;
+  }
+}
+
+.loginmodalnoaccountcontainer {
+  // text-align: center;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  width: 300px;
+  // background-color: aqua;
+}
+
+.loginmodalsigninheadingtext {
+  font-size: 24px;
+  font-family: Bungee;
+  color: #fff;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 450px) {
+    font-size: 22px;
+  }
+}
+
+.loginmodalsigninbutton {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 32px;
+  margin-bottom: 20px !important;
+}
+
+.loginmodalortext {
+  font-size: 12px;
+  color: #ed0f1b;
+  padding: 0px 3px 2px 3px;
+  font-family: segoeui;
+}
+
+.loginOrdividerContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.loginDivider {
+  background-color: #ed0f1b;
+  height: 1px;
+  width: 100%;
+}
+
+.loginmodalorcontainer {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.loginmodalhr {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: #ed0f1b;
+}
+
+.loginmodalsuborcontainer {
+  position: absolute;
+  top: 4px;
+  right: 112px;
+  background-color: #fff;
+  width: 25px;
+  justify-content: center;
+  display: flex;
+  color: #ed0f1b;
+}
+
+.signinmodalsignintext {
+  font-size: 12px;
+  font-family: segoeui;
+  font-weight: bold;
+}
+
+.loginmodalemailpasswordtext {
+  font-size: 14px;
+  padding-bottom: 8px;
+  padding-top: 12px;
+  font-family: segoeui;
+  color: #666;
+  font-weight: bold;
+}
+
+.loginmodalcontent {
+  padding: 10px 50px 0px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loginmodalinputtext {
+  border: 1px solid #ed0f1b;
+  height: 30px !important;
+  padding-left: 10px;
+  font-size: 15px !important;
+  border-radius: 4px !important;
+  caret-color: #ed0f1b;
+}
+
+.loginmodalinputtext:focus {
+  outline: none !important;
+  box-shadow: 0 0 3px #ddd;
+}
+
+.loginmodalerrormsg {
+  color: #ed0f1b;
+  font-size: 12px;
+}
+
+.loginmodalforgotpassword {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #ed0f1b;
+  font-family: segoeui;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loginmodalforgotpasswordcontainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 415px) {
+  .loginmodalsubmaindialog {
+    width: 300px;
+  }
+
+  .loginmodalcontent {
+    padding: 20px 20px 0px 20px;
+  }
+
+  .loginmodalsuborcontainer {
+    right: 115px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .loginmodalsubmaindialog {
+    width: 100%;
+  }
+
+  .loginmodalsuborcontainer {
+    right: 95px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  .loginmodalsuborcontainer {
+    right: 90px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .loginmodalsuborcontainer {
+    right: 85px;
+  }
+}
+
+@media screen and (max-height: 555px) {
+  .loginmodalcontent {
+    padding-top: 20px;
+  }
+}

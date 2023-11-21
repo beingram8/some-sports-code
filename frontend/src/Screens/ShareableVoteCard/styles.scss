@@ -1,0 +1,77 @@
+@use '../../Styles/core/wrapper';
+@use '../../Styles/core/sizes';
+@use '../../Styles/global/colors';
+
+.voteCardMatchHeaderText {
+  font-weight: bold;
+  color: #fff;
+  font-family: segoeui;
+  font-size: 14px;
+
+  @media screen and (max-width: 450px) {
+    font-size: 12px;
+  }
+}
+
+.VoteCardTeamName {
+  color: #fff;
+  font-weight: medium;
+  font-size: 15px;
+  text-align: center;
+  font-family: segoeui;
+  padding-top: 10px;
+
+  @media screen and (max-width: 450px) {
+    font-size: 14px;
+  }
+}
+
+.VoteCardScoreStyle {
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: Segoeui;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  @media screen and (max-width: 450px) {
+    font-size: 35px;
+  }
+}
+
+.SVCDiv {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 65px);
+  flex-direction: column;
+  overflow: auto;
+}
+
+.SVCDiv1 {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.SVCTeamLogo {
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+}
+
+.SVCDiv2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.SVCDiv3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

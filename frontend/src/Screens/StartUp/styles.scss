@@ -1,0 +1,360 @@
+@use '../../Styles/core/wrapper';
+@use '../../Styles/core/sizes';
+@use '../../Styles/global/colors';
+
+.topconntent {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 0px;
+  right: -70px;
+}
+
+.topconntent1 {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  height: 650px;
+  bottom: 0px;
+}
+
+.videoContentDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 500px;
+
+  @media screen and(max-width: 1520px) {
+    width: 450px;
+  }
+
+  @media screen and(max-width: 1400px) {
+    width: 400px;
+  }
+
+  @media screen and(max-width: 1300px) {
+    width: 360px;
+  }
+
+  @media screen and(max-width: 1200px) {
+    width: 340px;
+  }
+
+  @media screen and(max-width: 1150px) {
+    width: 300px;
+  }
+}
+
+.timerStyle {
+  font-size: 50px;
+  font-family: Bungee;
+  letter-spacing: 1.68px;
+  color: #353535;
+  text-align: center;
+  margin-top: -5px;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 700px) {
+    font-size: 40px;
+  }
+}
+
+.phoneImageDiv {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.descriptionSUStyle {
+  text-align: center;
+  width: 38.5%;
+  font-size: 20px;
+  color: #353535;
+
+  @media screen and(max-width: 1200px) {
+    width: 67%;
+  }
+}
+
+.startUpNowBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ed0f18;
+  padding: 8px;
+  z-index: 1px;
+  width: 30%;
+  border-radius: 20px;
+
+  @media screen and(max-width: 1200px) {
+    width: 40%;
+  }
+}
+
+.startButtnMain {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.startBtnTextWEb {
+  color: white;
+  font-family: seguibl;
+}
+
+.imagesDiv1 {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  background-color: #ed0f18;
+}
+
+.imagesDiv2 {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  top: 20px;
+  right: 70px;
+}
+
+.appimageStyleWEb {
+  width: 40%;
+}
+
+.uncleAuntyimageWeb {
+  height: 370px;
+}
+
+.topContentMainDiv {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  display: flex;
+}
+
+.topconntent2 {
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.topconntent3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 15px 60px;
+}
+
+.topcontentText1 {
+  font-family: seguibl;
+  color: #ed0f18;
+  font-size: 35px;
+  text-align: center;
+}
+
+.topContentDiv1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.topContentDiv2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.topconntent4 {
+  font-family: Bungee;
+  font-size: 60px;
+  color: #484848;
+  line-height: 1.5em;
+}
+
+.divStartbtn {
+  margin-bottom: 130px;
+}
+
+.textArrayDiv {
+  display: flex;
+  margin: 20px 0px;
+  justify-content: center;
+  flex-direction: column;
+  columns: 2 auto;
+  padding: 0 11%;
+}
+
+.textArrayDiv1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.textArrayDiv2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.textArrayId {
+  font-family: Bungee;
+  color: #ed0f18;
+  font-size: 32px;
+  margin-right: 10px;
+  line-height: 1.5em;
+}
+
+.textArraydesc {
+  color: #484848;
+  font-size: 16px;
+  font-family: segoeui;
+}
+
+.centerDivWeb {
+  display: flex;
+  justify-content: center;
+}
+
+.centerDivWebText1 {
+  color: #353535;
+  font-family: Bungee;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+.topcontentText2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  line-height: 1.5em;
+}
+
+.helpDivweb {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  line-height: 1.5em;
+  margin-top: 20;
+}
+
+.helpTextWeb {
+  text-align: center;
+  color: #ed0f18;
+  font-family: seguibl;
+  border-bottom: 1px solid #ed0f18;
+  font-size: 20px;
+}
+
+.webLauncher1 {
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+
+.webLauncher2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weblauncherText1 {
+  padding: 20px 0px;
+  color: #353535;
+  font-size: 20px;
+  font-family: Bungee;
+  line-height: 1.5em;
+}
+
+.weblauncher3 {
+  border: 1px solid #ed0f18;
+  padding: 30px;
+  width: 600px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.mainContentDiv1 {
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.marginTop50 {
+  margin-top: 50px;
+}
+
+.mainContentDiv2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.mainContentDiv3 {
+  border-bottom: 2px solid #ed0f18;
+  padding: 50px 50px;
+}
+
+.mainContentDiv4 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 11%;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.textTitleWeb {
+  font-family: Bungee;
+  color: #ed0f18;
+  font-size: 34px;
+  line-height: 1.5em;
+}
+
+.textDescWeb {
+  font-family: segoeui;
+  color: #484848;
+  font-size: 20px;
+}
+
+.contentDivDesc1 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contentDivDesc2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.contentDivDesc3 {
+  color: #353535;
+  font-family: Bungee;
+  font-size: 24px;
+  line-height: 1.5em;
+}
+
+.width30 {
+  width: 30%;
+}

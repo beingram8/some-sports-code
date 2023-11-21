@@ -1,0 +1,118 @@
+<?php
+use kartik\date\DatePicker;
+use yii\grid\GridView;
+use yii\helpers\Html;
+use yii\widgets\Breadcrumbs;
+use yii\widgets\Pjax;
+/* @var $this yii\web\View */
+/* @var $searchModel common\models\SeasonSearch */
+/* @var $dataProvider yii\data\ActiveDataProvider */
+
+$this->title =
+    'Seasons';
+$this->params['breadcrumbs'][] = $this->title;
+?>
+
+<?php Pjax::begin();?>
+<div class="subheader py-2 py-lg-12 subheader-transparent">
+    <div class="container d-flex align-items-center justify-content-between flex-wrap flex-sm-nowrap">
+        <!--begin::Info-->
+        <div class="d-flex align-items-center flex-wrap mr-1">
+            <!--begin::Heading-->
+            <div class="d-flex flex-column breadcrumbs">
+                <!--begin::Title-->
+                <h2 class="text-white font-weight-bold my-2 mr-5">
+                    <?=Html::encode($this->title)?>
+                </h2>
+                <!--end::Title-->
+                <!--begin::Breadcrumb-->
+                <?php echo Breadcrumbs::widget([
+    'tag' => 'div',
+    'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
+    'itemTemplate' => '<span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>{link}',
+    'options' => ['class' => 'd-flex m-left-8 align-items-center font-weight-bold my-2',
+        'style' => "color: #fff;"],
+    'activeItemTemplate' => '<span class="label label-dot label-sm bg-white opacity-75 mx-3"></span>{link}',
+]);
+?>
+
+                <?php //                 echo $this->render('_search',['model' => $searchModel]); ?>
+                <!--end::Breadcrumb-->
+            </div>
+            <!--end::Heading-->
+        </div>
+        <!--end::Info-->
+        <!--begin::Toolbar-->
+        <div class="d-flex align-items-center">
+            <?=Html::a('Create Season',
+    ['create'], ['data-pjax' => '0', 'class' => 'btn btn-white font-weight-bold py-3 px-6'])?>
+
+        </div>
+        <!--end::Toolbar-->
+    </div>
+</div>
+<div class="d-flex flex-column-fluid">
+    <div class="container">
+        <div class="card card-custom">
+            <div class="card-body">
+
+                <?php //                 echo $this->render('_search',['model' => $searchModel]); ?>
+
+                <?=GridView::widget([
+    'dataProvider' => $dataProvider,
+    'filterModel' => $searchModel,
+    'columns' => [
+        'season',
+        'title',
+        [
+            'attribute' => 'start_date',
+            'filter' => DatePicker::widget([
+                'name' => 'SeasonSearch[start_date]',
+                'value' => $searchModel->start_date,
+                'options' => ['placeholder' => 'Select Start date'],
+                'pluginOptions' => [
+                    'autoclose' => true,
+                    'format' => 'yyyy-mm-dd',
+                ],
+            ]),
+            'value' => function ($model) {
+                return \Yii::$app->general->format_date(strtotime($model->start_date));
+            },
+        ],
+        [
+            'attribute' => 'end_date',
+            'filter' => DatePicker::widget([
+                'name' => 'SeasonSearch[end_date]',
+                'value' => $searchModel->end_date,
+                'options' => ['placeholder' => 'Select End date'],
+                'pluginOptions' => [
+                    'autoclose' => true,
+                    'format' => 'yyyy-mm-dd',
+                ],
+            ]),
+            'value' => function ($model) {
+                return \Yii::$app->general->format_date(strtotime($model->end_date));
+            },
+        ],
+        // 'start_date',
+        // 'end_date',
+        [
+            'attribute' => 'is_expired',
+            'filter' => ['1' => 'Yes', '0' => 'No'],
+            'format' => 'raw',
+            'value' => function ($model) {
+                $url = \yii\helpers\Url::to(['season/update-expire'], $schema = true);
+                return '<form class="ajax-form" action="' . $url . '">' .
+                \yii\helpers\Html::dropDownList('is_expired', $model->is_expired, ['1' => 'Yes', '0' => 'No'], ['prompt' => '', 'class' => 'is-expire-dropdown form-control', 'data-id' => $model->season, 'data-option' => $model->is_expired]) . '
+                        </form>';
+            },
+        ],
+
+        ['class' => 'yii\grid\ActionColumn', 'template' => '{update}'],
+    ],
+]);?>
+            </div>
+        </div>
+    </div>
+</div>
+<?php Pjax::end();?>

@@ -1,0 +1,163 @@
+@use "../../Styles/core/wrapper";
+@use "../../Styles/core/sizes";
+@use "../../Styles/global/colors";
+
+.inviteandearnimagecontainer {
+  display: flex;
+  justify-content: center;
+}
+
+.inviteandearnimage {
+  width: 800px;
+  height: 450px;
+}
+
+.iecutCorner {
+  position: relative;
+}
+
+.iecutCorner img {
+  display: block;
+}
+
+.iecutCorner:before {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  content: "";
+  border-bottom: 60px solid silver;
+  border-left: 800px solid transparent;
+}
+
+.iecutCorner:after {
+  position: absolute;
+  right: 0px;
+  bottom: -1px;
+  content: "";
+  border-bottom: 60px solid white;
+  border-left: 800px solid transparent;
+}
+
+.inviteandearndesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+  width: 750px;
+}
+
+.ieinviteandearndesccontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.eititletext {
+  font-size: 25px;
+  font-family: Bungee;
+  color: #353535;
+  letter-spacing: 1.5px;
+  line-height: 1.5em;
+}
+
+.eidesctext {
+  font-size: 18px;
+  font-family: segoeui;
+  color: #656565;
+  padding-top: 30px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+@media screen and (max-width: 930px) {
+  .inviteandearnimage {
+    width: 100%;
+    height: 48vw;
+  }
+
+  .iecutCorner:before {
+    border-left: 87vw solid transparent;
+  }
+
+  .iecutCorner:after {
+    border-left: 87vw solid transparent;
+  }
+
+  .inviteandearndesc {
+    width: 95%;
+  }
+
+  .eititletext {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .iecutCorner:before {
+    border-left: 100vw solid transparent;
+  }
+
+  .iecutCorner:after {
+    border-left: 100vw solid transparent;
+  }
+
+  .inviteandearndesc {
+    padding-top: 20px;
+  }
+
+  .ieinviteandearndesccontainer {
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .inviteandearnimage {
+    height: 250px;
+  }
+
+  .eititletext {
+    font-size: 22px;
+  }
+
+  .eidesctext {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
+}
+
+.inviteandearnsharebtn {
+  cursor: pointer;
+  background-color: #ed0f1b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  height: 40px;
+  width: 50%;
+}
+
+.inviteandearnsharebtn2 {
+  font-family: "segoeui";
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.inviteandearnmaincontainer {
+  height: calc(100% - 65px);
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.inviteandearnprogress {
+  width: 20px;
+  height: 20px;
+  color: red;
+}

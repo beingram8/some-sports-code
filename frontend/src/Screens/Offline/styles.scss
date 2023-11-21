@@ -1,0 +1,89 @@
+@use "../../Styles/core/wrapper";
+@use "../../Styles/core/sizes";
+@use "../../Styles/global/colors";
+
+.offlinemain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.offlineroot {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  background-color: #ed0f1b;
+  align-items: center;
+  justify-content: center;
+}
+
+.offlineheader {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "slaztone";
+  letter-spacing: 3px;
+}
+
+.offlinemaindiv {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.offlinerootdiv {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.offlinetextmain {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.offlinetextroot {
+  font-weight: bold;
+  font-family: "segoeui";
+  text-align: center;
+  padding-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.offlinebottmetitle {
+  font-weight: 400;
+  font-family: "segoeui";
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.offlinebtnmain {
+  padding: 15px 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ed0f1b;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.offlinebtninner {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "segoeui";
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}

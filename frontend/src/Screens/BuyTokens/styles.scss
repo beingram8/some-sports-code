@@ -1,0 +1,345 @@
+@use "../../Styles/core/wrapper";
+@use "../../Styles/core/sizes";
+@use "../../Styles/global/colors";
+
+.buytokendesctext {
+  font-size: 18px;
+  font-weight: bold;
+  color: #353535;
+  cursor: default;
+  text-align: center;
+  cursor: pointer;
+}
+
+.buytokenarrowcontainer {
+  padding: 4px;
+  background-color: rgb(238, 238, 238);
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.buytokenarrowimage {
+  height: 30px;
+}
+
+.planNameStyle {
+  color: #fff;
+  margin: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+  text-align: center;
+
+  @media screen and(max-width: 450px) {
+    font-size: 11px;
+    text-align: center;
+  }
+}
+
+.planNameContainer {
+  background-color: #ed0f18;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.planPriceStyle {
+  font-weight: 600;
+  color: #ed0f18;
+  font-size: 20px;
+
+  @media screen and(max-width: 450px) {
+    font-size: 15px;
+  }
+}
+
+.centercolumnStylePlan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.reelPricePlan {
+  margin: 10px 0px;
+  text-decoration: line-through;
+  font-weight: 600;
+  color: #484848;
+}
+
+.buytokenimagecontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 20px 10px;
+  border-radius: 4px;
+
+  cursor: pointer;
+  padding: 10px;
+
+  @media screen and(max-width: 450px) {
+    height: 150px;
+  }
+}
+
+.buytokentitletext {
+  font-family: Bungee;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #333;
+  line-height: 1.5em;
+}
+
+.buytokenhorizontalitems1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buytokenhorizontalitems2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buytokenyourtokentext {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: segoeui;
+  color: #353535;
+}
+
+.buytokenimage {
+  height: 85px;
+  width: 85px !important;
+  margin-top: 10px;
+
+  @media screen and(max-width: 450px) {
+    height: 50px !important;
+    width: 40px !important;
+  }
+}
+
+.buytokentokentext {
+  font-size: 18px;
+  font-weight: bold;
+  color: #656565;
+}
+
+.bttimetext {
+  font-size: 11px;
+  font-family: segoeui;
+  color: #656565;
+  font-weight: bold;
+}
+
+.buytokentranstext {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ed0f1b;
+}
+
+.btusername {
+  font-size: 15px;
+  letter-spacing: 1px;
+  font-family: segoeui;
+  color: #353535;
+  font-weight: bold;
+  padding-right: 15px;
+}
+
+.buytokentranscontainer {
+  padding: 15px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buytokentransmaincontainer {
+  padding-top: 10px;
+}
+
+.buytokensubmaindiv {
+  overflow: auto;
+  height: 100%;
+}
+
+@media screen and (max-width: 639px) {
+  .buytokensubmaindiv {
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .buytokensubmaindiv {
+    padding: 0px 20px;
+  }
+
+  .buytokendesctext {
+    font-size: 14px;
+  }
+
+  .buytokentitletext {
+    font-size: 24px;
+  }
+
+  .buytokenimagecontainer {
+    height: 160px;
+    padding: 10px;
+  }
+
+  .buytokenimage {
+    height: 70px;
+    width: 70px !important;
+  }
+
+  .buytokenyourtokentext {
+    font-size: 17px;
+  }
+
+  .buytokentokentext {
+    font-size: 16px;
+  }
+
+  .bttimetext {
+    font-size: 10px;
+  }
+
+  .btusername {
+    font-size: 14px;
+  }
+
+  .buytokentranstext {
+    font-size: 15px;
+  }
+
+  .buytokenarrowcontainer {
+    height: 30px;
+    width: 30px;
+  }
+
+  .buytokenarrowimage {
+    height: 25px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .buytokensubmaindiv {
+    padding: 0px 10px;
+  }
+
+  .buytokendesctext {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+
+  .buytokentitletext {
+    font-size: 20px;
+  }
+
+  .buytokenimagecontainer {
+    height: 120px;
+    padding: 10px;
+  }
+
+  .buytokenimage {
+    height: 55px;
+    width: 55px !important;
+  }
+
+  .buytokenyourtokentext {
+    font-size: 13px;
+  }
+
+  .buytokentokentext {
+    font-size: 14px;
+  }
+
+  .bttimetext {
+    font-size: 9px;
+  }
+
+  .btusername {
+    font-size: 13px;
+  }
+
+  .buytokentranstext {
+    font-size: 14px;
+  }
+
+  .buytokenarrowcontainer {
+    height: 25px;
+    width: 25px;
+  }
+
+  .buytokenarrowimage {
+    height: 20px;
+  }
+
+  .buytokentranscontainer {
+    padding: 10px 0px;
+  }
+
+  .buytokentransmaincontainer {
+    padding-top: 5px;
+  }
+
+  .buytokenhorizontalitems2 {
+    margin-top: 10px;
+  }
+}
+
+.butTOkenDiv1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.buyTokenDiv2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and(max-width: 450px) {
+    justify-content: flex-start;
+  }
+}
+
+.buytokenMargin20 {
+  margin-top: 20px;
+}
+
+.div3BT {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  justify-content: space-around;
+}
+
+.brokrnpagemaincontainter {
+  height: calc(100% - 65px);
+}
+
+.buytokenmargintop {
+  margin-top: 10px;
+}
+.appcolor {
+  color: #ed0f1b;
+}
+
+.greencolor {
+  color: #00a300;
+}

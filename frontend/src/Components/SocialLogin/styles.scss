@@ -1,0 +1,75 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.emailLogButtonSty {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35px;
+  height: 35px;
+  color: #ffffff;
+  background-color: #ed0f1b;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #ed0f1b;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+.appleButtonMainCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 35px;
+  color: #ffffff;
+  background-color: #000;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border-width: 1px;
+  border-color: #000;
+  border-style: solid;
+  margin-top: 10px;
+}
+
+.appleButtonTextSty {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: segoeui;
+  text-transform: inherit;
+}
+
+.appleIconSty {
+  height: 100%;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 2px;
+  display: flex;
+  background-color: #0000;
+}
+
+.appleErrorCon {
+  padding: 10px;
+  display: flex;
+}
+
+.appleErrorTextSty {
+  text-align: center;
+  font-size: 10px;
+  font-family: segoeui;
+  letter-spacing: 0.5px;
+  color: #ed0f1b;
+  background-color: #0000;
+}

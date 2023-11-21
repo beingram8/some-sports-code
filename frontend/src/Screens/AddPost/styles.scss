@@ -1,0 +1,111 @@
+@use "../../Styles/core/wrapper";
+@use "../../Styles/core/sizes";
+@use "../../Styles/global/colors";
+
+.mainContainerAP {
+  height: 500px;
+  width: 100%;
+}
+
+.addposthead {
+  margin: 20px 0px;
+
+  @media screen and(max-width: 639px) {
+    margin: 20px 20px;
+  }
+}
+
+.addpostTextAreaCU {
+  border: 1px solid #ed0f1b;
+  font-size: 15px !important;
+  margin-bottom: 13px;
+  border-radius: 3px;
+  width: none;
+  resize: none;
+  height: 112px;
+  caret-color: #ed0f1b;
+
+  @media screen and (max-width: 650px) {
+    height: 100px;
+  }
+}
+
+.addpostTextAreaCU:focus {
+  outline: none !important;
+  box-shadow: 0 0 3px #ed0f18;
+}
+
+.addposttextStyleCU {
+  font-size: 20px;
+  padding-bottom: 8px;
+  font-family: segoeui;
+  color: #656565;
+
+  @media screen and (max-width: 639px) {
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 14px;
+  }
+}
+
+.divInfoUIAP {
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
+}
+
+.divInfoUIAP1 {
+  width: 100%;
+}
+
+.addpostMediaCancel {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+}
+
+.mediaPreviewDiv {
+  border: 1px solid #ed0f18;
+  border-radius: 5px;
+  position: relative;
+  padding: 5px;
+}
+
+.addpostCancelIcon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.mediaImagePreview {
+  width: 100%;
+  height: 100%;
+}
+
+.post_loader {
+  height: 20px !important;
+  width: 20px !important;
+  color: #ffffff !important;
+  margin-right: 8px;
+}
+
+.invalidspan {
+  font-size: 20px;
+  color: red;
+}
+
+.addpostroot {
+  height: calc(100% - 150px);
+  overflow: scroll;
+  z-index: 10;
+}
+
+.addpostmaincontainer {
+  position: unset;
+}

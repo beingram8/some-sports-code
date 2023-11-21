@@ -1,0 +1,18 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.CVideoPlayerCon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.CVideoPlayerImgSty {
+  width: 100%;
+  height: 100%;
+}
+
+.CVideoFixedHeight {
+  height: 500px;
+}

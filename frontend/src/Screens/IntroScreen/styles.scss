@@ -1,0 +1,22 @@
+@use "../../Styles/core/wrapper";
+@use "../../Styles/core/sizes";
+@use "../../Styles/global/colors";
+
+.mainIntroDiv {
+  background-image: url("../../Assets/Images/ranking_web22.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and(max-width:  970px) {
+    background-image: url("../../Assets/Images/ranking_web.png");
+  }
+
+  @media screen and(max-width: 450px) {
+    background-image: url("../../Assets/Images/ranking_web.png");
+  }
+}

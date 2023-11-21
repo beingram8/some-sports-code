@@ -1,0 +1,256 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.questionBG {
+  background: linear-gradient(to right, #ed0f1b, #aa111a);
+}
+
+.surveyunlockbuttonloader {
+  width: 15px !important;
+  height: 15px !important;
+  color: #ffffff !important;
+}
+
+.questionDiv {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.buyTokenModalHeader {
+  background: linear-gradient(to right, #ed0f1b, #aa111a);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.unlockmodalclosebutton {
+  height: 70px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buyTokentitleStyle {
+  color: #ffffff;
+  font-family: Bungee;
+  font-size: 26px;
+  padding-right: 10px;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 350px) {
+    font-size: 22px;
+  }
+}
+
+.unlockmodalclosebuttonimage {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.surveytitleDiv {
+  background: linear-gradient(to right, #ed0f1b, #aa111a);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.surveydivmaincontainer {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.surveydivmaincontainersub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-top: 40px;
+}
+
+.surveytokentext {
+  margin-top: 15px;
+  font-family: Bungee;
+  font-size: 20px;
+}
+
+.surveyunlocktokencontainer {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.surveyunlockbuttoncontainer {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.howtoplaycontainer {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.surveycontainer {
+  margin-top: 10px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.optionsimage {
+  width: 50px;
+  height: 50px;
+}
+
+.buymoretokencontainer {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.surveytitleStyle {
+  color: #ffffff;
+  font-family: Bungee;
+  font-size: 26px;
+  padding-left: 10px;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 350px) {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+.surveydivMargin {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: scroll;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.submaindialogQuiz {
+  padding: 0px !important;
+  width: 500px;
+}
+
+.howToPlay {
+  color: #484848;
+  font-family: Bungee;
+  font-size: 24px;
+  text-align: left;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 350px) {
+    font-size: 18px;
+  }
+}
+
+.contentStyle {
+  color: #656565;
+  line-height: 25px;
+  font-family: segoeui;
+}
+
+.questionStyle {
+  color: white;
+  text-align: center;
+  font-family: Bungee;
+  font-size: 20px;
+  letter-spacing: 1.32px;
+  line-height: 1.5em;
+}
+
+.optionsDiv {
+  padding: 10px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.divCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconStyle {
+  width: 25px;
+  height: 25px;
+}
+
+.optionStyle {
+  display: flex;
+  align-items: center;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.skipButton {
+  cursor: pointer;
+  border: 1px solid #ed0f1b;
+  padding: 12px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-right: 7px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.nextButton {
+  cursor: pointer;
+  background-color: #ed0f1b;
+  border: 1px solid #ed0f1b;
+  padding: 12px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.whiteFont {
+  color: #ffffff;
+  font-family: segoeui;
+}
+
+.redFont {
+  color: #ed0f1b;
+  font-family: segoeui;
+}

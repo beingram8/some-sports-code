@@ -1,0 +1,116 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.resetPwdheaderCon {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: colors.$layout-primary-color;
+}
+
+.resetPwdHTitle {
+  font-size: sizes.$large-font-size;
+  color: colors.$layout-white-color;
+  text-align: center;
+  font-family: colors.$slaztone-font-family;
+  letter-spacing: "3px";
+  cursor: pointer;
+}
+
+.resetDivCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainResetPwdInfoCon {
+  background-image: url("../../Assets/Images/ranking_web.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.ResetPwdContainer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+}
+
+.ResetPwdDivCU {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.ResetTextStyleCU {
+  font-size: 18px;
+  padding-bottom: 8px;
+  font-family: segoeui;
+  color: #656565;
+}
+
+.ResetInputtextCU:focus {
+  outline: none !important;
+  box-shadow: 0 0 3px #ed0f18;
+}
+
+.ResetInputtextCU {
+  border: 1px solid #ed0f1b;
+  height: 35px !important;
+  width: 96%;
+  padding-left: 10px;
+  font-size: 15px !important;
+  border-radius: 3px;
+  caret-color: #ed0f18;
+}
+
+.ResetButtonDivCU {
+  margin-top: 30px;
+  border-radius: 5px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: center;
+  background-color: #ed0f1b;
+  box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+    0px 3px 4px 0px rgb(0 0 0 / 14%), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+  align-self: center;
+}
+
+.ResetButtonTextCU {
+  padding: 5px;
+  color: #fff;
+  font-family: segoeui;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.resetPwdErr {
+  color: #ed0f18;
+  font-size: 12px;
+}
+
+@media screen and (max-width: 870px) {
+  .ResetPwdContainer {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .ResetTextStyleCU {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 639px) {
+  .ResetTextStyleCU {
+    font-size: 14px;
+  }
+}

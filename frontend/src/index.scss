@@ -1,0 +1,64 @@
+@use './Styles/global/colors';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+}
+body {
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu,
+    Cantarell, Fira Sans, sans-serif, slaztone, segoeui, Bungee;
+  height: 100%;
+  background-color: colors.$layout-white-color;
+}
+
+@font-face {
+  font-family: "Bungee";
+  src: local("Bungee"),
+    url("./Assets/fonts/Bungee/Bungee-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "slaztone";
+  src: local("slaztone"),
+    url("./Assets/fonts/slaztone/Slaztone.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "segoeui";
+  src: local("segoeui"),
+    url("./Assets/fonts/segoeui/segoeui.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "segoeuii";
+  src: local("segoeuii"),
+    url("./Assets/fonts/segoeui/segoeuii.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "segoeuisl";
+  src: local("segoeuisl"),
+    url("./Assets/fonts/segoeui/segoeuisl.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "seguibl";
+  src: local("seguibl"),
+    url("./Assets/fonts/segoeui/seguibl.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "seguisli";
+  src: local("seguisli"),
+    url("./Assets/fonts/segoeui/seguisli.ttf") format("truetype");
+  font-weight: normal;
+}

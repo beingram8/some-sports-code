@@ -1,0 +1,6 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target" : { "namespace": "android_app", "package_name": "com.fanrating.twa",
+               "sha256_cert_fingerprints": ["6F:8A:71:B9:C9:25:76:F3:97:91:29:CC:F0:E6:03:D3:65:06:C2:2B:55:F3:39:35:CA:67:43:22:44:F7:1E:CF"] }
+}
+]

@@ -1,0 +1,401 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.dropdownselectSU {
+  border: 1px solid #ed0f1b !important;
+  height: 0px;
+  font-size: 15px;
+  border-radius: 4px;
+  margin-top: 5px;
+  caret-color: #ed0f1b;
+}
+
+.maindialogSU {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.submaindialogSU {
+  padding: 0px !important;
+}
+
+.termsandconditiondatamain {
+  padding: 0px 10px;
+  height: 60vh;
+  overflow: scroll;
+}
+
+.termsandconditiondata {
+  overflow: scroll;
+}
+
+.headerbackspaceiconstyleSU {
+  font-size: 40px !important;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.signupmodalcheckbox {
+  padding: 0px 5px 0px 0px !important;
+  color: #ed0f18 !important;
+}
+
+.signupmodalcheckboxcontainer2 {
+  display: flex;
+  align-items: center;
+}
+
+.signupmodalrendercheckbox {
+  padding-bottom: 15px;
+}
+
+.signupmodalcheckboxcontainer {
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.signupmodaltermsandcondition {
+  font-size: 21px;
+  font-family: Bungee;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+.signupmodalerrormsg {
+  color: #ed0f1b;
+  font-size: 12px;
+}
+
+.signupmodalerrormsg2 {
+  color: #ed0f1b;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.termsandconditionloadercontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.termsandconditionloader {
+  width: 20px !important;
+  height: 20px !important;
+  margin-left: 20px !important;
+  color: #f00 !important;
+}
+
+.firstlastnamecontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inputStyleSU:focus {
+  outline: none !important;
+  box-shadow: 0 0 3px #ed0f18;
+}
+
+.datePopup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.signupmodalsubmaindialog {
+  padding: 0px !important;
+  width: 350px;
+}
+
+.signupmodalsubmaindialog2 {
+  padding: 0px !important;
+  width: 350px;
+  height: 80vh;
+  max-height: 740px;
+}
+
+.signupmodalsubmaindialog3 {
+  padding: 0px !important;
+  width: 350px;
+  height: 70vh;
+  max-height: 660px;
+}
+
+.signupmodalcontentcontainer2 {
+  height: calc(100% - 70px);
+  overflow: auto;
+}
+
+.titleDivSU {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.closeIconDivSU {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.closeIconStyleSU {
+  height: 30px;
+  width: 30px;
+}
+
+.titleStyleSUHeader {
+  font-size: 28px;
+  letter-spacing: 1.68px;
+  display: flex;
+  align-self: center;
+}
+
+.contentDivSU {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.signupmodalcontent {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding:20px
+}
+
+.inputDiv {
+  margin-top: 10px;
+}
+
+.titleStyleSU {
+  font-family: segoeui;
+  color: #656565;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.signupmodalsigninheading {
+  height: 70px;
+  background: linear-gradient(to right, #ed0f1b, #aa111a);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.signupmodalclosebutton {
+  // position: absolute;
+  height: 70px;
+  width: 50px;
+  // top: 0;
+  // right: 0;
+  // z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signupmodalclosebuttonimage {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+}
+
+.inputStyleSU {
+  border: 1px solid #ed0f1b;
+  border-radius: 3px;
+  height: 32px;
+  width: calc(100% - 20px);
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  color: #484848;
+  caret-color: #ed0f1b;
+}
+
+.buttonStyleSU {
+  background-color: #ed0f1b;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 15px;
+}
+
+.whiteColorStyleSU {
+  font-family: segoeui;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.checkboxstyle {
+  font-family: segoeui;
+  font-size: 12px;
+  color: #000;
+}
+
+.orDivStyleSU {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.dividerStyleSU {
+  height: 2px;
+  width: 100%;
+  background-color: #ed0f1b;
+}
+
+.orTextStyleSU {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: #ed0f1b;
+}
+
+.signupmodalorcontainer {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.signupmodalhr {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: #ed0f1b;
+}
+
+.signupmodalsuborcontainer {
+  position: absolute;
+  top: 4px;
+  right: 112px;
+  background-color: #fff;
+  width: 25px;
+  justify-content: center;
+  display: flex;
+  color: #ed0f1b;
+}
+
+.themeColorSU {
+  // color: #ed0f1b;
+}
+.signupLinkSU {
+  // color: #ed0f1b;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 470px) {
+  .signupmodalsubmaindialog {
+    width: 80vw;
+  }
+
+  .signupmodalsubmaindialog2 {
+    width: 100%;
+  }
+
+  .signupmodalsubmaindialog3 {
+    width: 100%;
+  }
+
+  .signupmodalsuborcontainer {
+    right: 115px;
+  }
+}
+
+.noAccountSU {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.signupmodalnoaccountcontainer {
+  text-align: center;
+  // margin-top: 5px;
+}
+
+.signupmodalnoaccountcontainer2 {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.signupmodalsignuptext {
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: segoeui;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #D92B34;
+}
+.signupmodalortext {
+  font-family: segoeui;
+  font-size: 12px;
+  color: #ed0f1b;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.signupmodalorcontainer {
+  margin-bottom: 15px;
+  position: relative;
+  margin-top: 15px;
+}
+
+.signupmodalsuborcontainer {
+  position: absolute;
+  top: 0px;
+  right: 45%;
+  background-color: #fff;
+  width: 25px;
+  justify-content: center;
+  display: flex;
+  color: #ed0f1b;
+}
+
+.signupmodalhaveaccounttext {
+  font-size: 12px;
+  font-family: segoeui;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.signupOrdividerContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.signupDivider {
+  background-color: #ed0f1b;
+  height: 1px;
+  width: 100%;
+}
+
+@media screen and (max-height: 820px) {
+  .signupmodalsubmaindialog {
+    // height: 90vh !important;
+  }
+}

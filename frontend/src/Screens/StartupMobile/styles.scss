@@ -1,0 +1,268 @@
+@use '../../Styles/core/wrapper';
+@use '../../Styles/core/sizes';
+@use '../../Styles/global/colors';
+
+.videoContentDivMob {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0px 20px;
+
+  @media screen and(max-width: 1100px) {
+    margin: 0px 200px;
+  }
+
+  @media screen and(max-width: 1000px) {
+    margin: 0px 100px;
+  }
+
+  @media screen and(max-width: 900px) {
+    margin: 0px 80px;
+  }
+
+  @media screen and(max-width: 800px) {
+    margin: 0px 50px;
+  }
+
+  @media screen and(max-width: 600px) {
+    margin: 0px 30px;
+  }
+
+  @media screen and(max-width: 450px) {
+    margin: 0px 20px;
+  }
+}
+
+.timerStyleMobileDate {
+  font-size: 70px;
+  font-family: Bungee;
+  letter-spacing: 1.68px;
+  color: #353535;
+  text-align: center;
+  margin-top: -5px;
+  line-height: 1.5em;
+}
+
+.timerStyleMobileMonth {
+  font-size: 30px;
+  font-family: Bungee;
+  letter-spacing: 1.68px;
+  color: #353535;
+  text-align: center;
+  margin-top: -5px;
+  line-height: 1.5em;
+}
+
+.startUpNowBtnMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  z-index: 1px;
+  border-radius: 50px;
+
+  @media screen and(max-width: 400px) {
+    width: 40%;
+  }
+}
+
+.startBtnDiv {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.startBtnText {
+  font-family: seguibl;
+  font-size: 18px;
+}
+
+.topContentDivMob1 {
+  background-color: #ed0f18;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.topContentDivMob2 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.mobAPPIcon {
+  width: 180px;
+  height: 180px;
+}
+
+.mobTextStyle1Div {
+  margin: 30px 20px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.mobTextStyle1 {
+  font-family: seguibl;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+.mobTextStyle2Div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mobTextStyle2 {
+  font-family: Bungee;
+  font-size: 50px;
+  color: #fff;
+  line-height: 1.5em;
+}
+
+.mainImage {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.contentDivMOb {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contentIdMOb {
+  font-family: Bungee;
+  color: #eeeeee;
+  font-size: 40;
+  line-height: 1.5em;
+}
+
+.contentDEscMobDiv {
+  margin-top: -29px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.contentDEscMob {
+  color: #484848;
+  font-size: 18px;
+  font-family: segoeui;
+}
+
+.launchTimerDivMain {
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+
+.launchTImerCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.launchTImerCenter1 {
+  padding: 20px 0px;
+  color: #353535;
+  font-size: 30px;
+  font-family: Bungee;
+  line-height: 1.5em;
+}
+
+.divMob01 {
+  border: 1px solid #ed0f18;
+  padding: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.divMob02 {
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.divMobCOlumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.spanMob01 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  line-height: 1.5em;
+}
+
+.spanMob02 {
+  color: #353535;
+  margin: 20px 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.divMob20 {
+  text-align: center;
+  color: #ed0f18;
+  font-family: seguibl;
+  border-bottom: 1px solid #ed0f18;
+  font-size: 20px;
+}
+
+.blankDivMob {
+  padding: 10;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.divStyle20 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.divCenterMob01 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.divCenterMob02 {
+  color: #353535;
+  font-family: Bungee;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+.divCenterMob03 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.spanMob03 {
+  color: #353535;
+  font-family: Bungee;
+  font-size: 20px;
+  line-height: 1.5em;
+}

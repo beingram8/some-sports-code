@@ -1,0 +1,158 @@
+@use "../../Styles/core/wrapper";
+@use "../../Styles/core/sizes";
+@use "../../Styles/global/colors";
+
+.allVideosMainContainer {
+  margin-top: 20px;
+}
+
+.radiostream2av {
+  width: 100%;
+  padding: 15px 5px 0px 5px;
+}
+
+.tifaPapersquare1av {
+  width: 22vw;
+  height: 10.5vw;
+  border-radius: 10px !important;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  background-size: cover !important;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and(max-width: 1279px) {
+    width: 26.5vw;
+    height: 12.5vw;
+  }
+
+  @media screen and(max-width: 1000px) {
+    width: 25.8vw;
+    height: 12.5vw;
+  }
+
+  @media screen and(max-width: 639px) {
+    width: 100% !important;
+    height: 200px !important;
+    margin-right: 20px;
+  }
+
+  @media screen and(max-width: 530px) {
+    width: 100% !important;
+    height: 200px !important;
+  }
+}
+
+.tifaiconbuttonstyleav {
+  background-color: #fff !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tifaplayiconstyleav {
+  color: #ed0f1b;
+  height: 50px !important;
+  width: 50px !important;
+}
+
+.tifaalltitlepaddingav {
+  margin-top: 5px;
+  width: 22vw;
+  margin-bottom: 20px;
+
+  @media screen and(max-width: 1279px) {
+    width: 26.5vw;
+  }
+
+  @media screen and(max-width: 1000px) {
+    width: 25.8vw;
+  }
+
+  @media screen and(max-width: 639px) {
+    width: 100% !important;
+  }
+
+  @media screen and(max-width: 530px) {
+    width: 100% !important;
+  }
+}
+
+.tifaalltitletext2av {
+  font-family: Segoeui;
+  font-weight: 600;
+  font-size: 18px;
+  color: #353535;
+
+  @media screen and(max-width: 1279px) {
+    font-size: 16px;
+  }
+
+  @media screen and(max-width: 570px) {
+    font-size: 14px;
+  }
+}
+
+.radiostream2divav {
+  display: flex;
+  overflow: auto;
+  margin-top: 20px;
+  padding: 0px 5px 0px 5px;
+
+  @media screen and(max-width: 639px) {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: calc(100vh - 65px);
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  @media screen and(max-width: 570px) {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    height: calc(100vh - 70px);
+  }
+}
+
+.tifaiconbuttonstyleav {
+  background-color: #fff !important;
+  height: 40px !important;
+  width: 40px !important;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avTitle {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  font-size: 35px;
+  font-family: Bungee;
+  color: #353535;
+  line-height: 1.5em;
+
+  @media screen and(max-width: 1000px) {
+    font-size: 30px;
+  }
+
+  @media screen and(max-width: 639px) {
+    padding-top: 5px;
+    padding-left: 15px;
+  }
+
+  @media screen and(max-width: 570px) {
+    font-size: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+}

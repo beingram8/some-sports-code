@@ -1,0 +1,72 @@
+@use '../../Styles/core/wrapper';
+@use '../../Styles/core/sizes';
+@use '../../Styles/global/colors';
+
+.contentSpan1 {
+  font-family: segoeui;
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+
+  @media screen and(max-width: 680px) {
+    font-size: 15px;
+  }
+
+  @media screen and(max-width: 400px) {
+    font-size: 11px;
+  }
+}
+
+.nomatchforVote {
+  font-family: segoeui;
+  // text-align: center;
+}
+
+.increaseLevelIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.ULDiv1 {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.ULDiv2 {
+  width: 50%;
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  margin-left: -30px;
+}
+
+.ULDiv21 {
+  width: 50%;
+  display: flex;
+  // align-items: center;
+  justify-content: flex-start;
+  // margin-left: 120px;
+
+  @media screen and(max-width: 500px) {
+    justify-content: flex-start;
+  }
+}
+
+.ULDivWidth20 {
+  width: 20%;
+}
+
+.ULDiv3 {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-left: 10px;
+}
+
+.ULDiv4 {
+  width: 16.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

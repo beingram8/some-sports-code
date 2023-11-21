@@ -1,0 +1,108 @@
+@use '../../Styles/core/sizes';
+@use '../../Styles/core/wrapper';
+@use '../../Styles/global/colors';
+
+.mainConForMobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coinIconStyle {
+  width: 20px;
+  height: 20px;
+}
+
+.uesrPhotoStyle {
+  width: 90px;
+  height: 90px;
+  border-radius: 100px;
+  margin-top: 10px;
+  position: relative;
+  top: -20px;
+}
+
+.userPhotoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100px;
+}
+
+.rankStripeStyle {
+  width: 80px;
+  height: 150px;
+}
+
+.teamDetailsDiv {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pointsStyleRM {
+  margin-left: 5px;
+  font-family: segoeui;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.teamNameStyle {
+  font-size: 10px;
+  font-family: segoeui;
+}
+
+.pointsDiv {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.div1Style {
+  position: relative;
+  top: -75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.div123Style {
+  position: absolute;
+  left: 10px;
+}
+
+.rankBadgeDiv {
+  position: relative;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  z-index: 1000;
+  top: 19px;
+  left: -33px;
+}
+
+.nameStyleRM {
+  text-align: center;
+  font-size: 12px;
+  font-family: segoeui;
+  color: #ffffff;
+}
+
+.nameStyleDivRm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+}
+
+.userDEtailsRM {
+  display: flex;
+  width: 33.33%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

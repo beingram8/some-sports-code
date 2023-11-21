@@ -1,0 +1,311 @@
+body {
+    background-size: 100% 80px !important;
+    background: #fff !important;
+}
+
+.datepicker {
+    width: auto !important;
+}
+
+.disabled-slot {
+    opacity: 0.4;
+}
+
+.kv-date-picker,
+.kv-date-remove {
+    display: none;
+    ;
+}
+
+.krajee-datepicker {
+    border-radius: 4px !important;
+}
+
+.error-summary {
+    background: #f64e60;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 14px;
+}
+
+.footer {
+    border-top: 1px solid #eaeaea;
+}
+
+.subheader {
+    border-bottom: 1px solid #e2e2e2!important;
+    background: #f1f1f1!important;
+}
+
+.select2-container .select2-selection--single {
+    height: 38px !important;
+}
+
+.select2-container--krajee .select2-selection--single .select2-selection__arrow {
+    height: 37px !important;
+}
+
+.h-316px {
+    height: 316px;
+}
+
+.border-r {
+    border-right: 1px solid #ddd;
+}
+
+span.fa.fa-star.checked {
+    color: #ffa800;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    padding: 0 0px !important;
+}
+
+.k_height {
+    height: calc(100vh - 450px) !important;
+}
+
+.iframe_ads {
+    height: calc(100vh - 400px) !important;
+}
+
+iframe {
+    height: calc(100vh - 80px) !important;
+}
+
+.form-control.form-control-solid {
+    border-color: #ddd !important;
+    background-color: #fff !important;
+}
+
+#appointment-appointment_hour {
+    height: 317px;
+    overflow-y: scroll;
+}
+
+.field-signupform-timezone .select2-container .select2-selection--single {
+    height: 50px !important;
+}
+
+.field-signupform-timezone .select2-container--krajee .select2-selection--single .select2-selection__arrow {
+    height: 50px !important;
+}
+
+.field-signupform-timezone .select2-container--krajee .select2-selection--single .select2-selection__rendered {
+    padding: 9px;
+}
+
+.field-signupform-country .select2-container .select2-selection--single {
+    height: 50px !important;
+}
+
+.field-signupform-country .select2-container--krajee .select2-selection--single .select2-selection__arrow {
+    height: 50px !important;
+}
+
+.field-signupform-country .select2-container--krajee .select2-selection--single .select2-selection__rendered {
+    padding: 9px;
+}
+
+.time-button-disabled,
+.time-button {
+    font-size: 12px !important;
+}
+
+label.time-button.text-center.time-selected {
+    background: #6993ff;
+    color: #fff;
+}
+
+.header-fixed[data-header-scroll=on] .header-menu .menu-nav>.menu-item>.menu-link .menu-text {
+    color: #fff !important;
+}
+
+body[data-header-scroll=on] .topbar .btn.btn-icon .text-white {
+    color: #fff !important;
+}
+
+label.time-button,
+label.time-button-disabled {
+    width: 154px;
+    border: 1px solid #ddd;
+    color: #1e1f21;
+    border-radius: 1px;
+    /* margin-right: 6px; */
+    padding: 10px;
+    font-weight: 400 !important;
+    font-size: 12px;
+}
+
+.time-button .form-group label {
+    font-weight: 400px !important;
+}
+
+.time-button input[type=radio] {
+    display: none;
+}
+
+.header-mobile .burger-icon span::after,
+.header-mobile .burger-icon span::before {
+    background-color: #464444 !important;
+}
+
+.btn.btn-hover-transparent-white .svg-icon svg g [fill] {
+    fill: #544d4d !important;
+}
+
+.container:before,
+.container:after {
+    display: table;
+    content: none !important
+}
+
+.help-block {
+    color: #f10d08 !important;
+    font-size: .9rem !important;
+    font-weight: 400 !important;
+}
+
+.help-block-error {
+    color: #f64e60 !important;
+    font-size: .9rem !important;
+    font-weight: 400 !important;
+}
+
+.login.login-1 .login-aside {
+    /* background-image: url(/media/logos/side-big-mark.png),linear-gradient(#003696,#005cff); */
+    background-repeat: no-repeat, no-repeat;
+    background-position: 100% 100%, 0 0;
+    background-size: 50%, 100%;
+}
+
+.breadcrumbs a {
+    color: #fff !important;
+}
+
+.m-left-8 {
+    margin-left: -8px;
+}
+
+ul.pagination a {
+    padding: 9px 18px;
+    border: 1px solid #ddd;
+    color: #000;
+}
+
+ul.pagination .disabled {
+    display: none;
+}
+
+ul.pagination .active a {
+    background-color: #1363ce;
+    border: 1px solid #1263d1;
+    color: #fff;
+}
+
+.grid-view thead tr {
+    color: #000;
+}
+
+.grid-view thead tr a {
+    color: #000;
+}
+
+.position .card.card-custom>.card-header {
+    min-height: 50px;
+}
+
+.required label:after {
+    color: red;
+    content: " *";
+}
+
+.care-checkbox input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+}
+
+.care-checkbox label {
+    margin-bottom: 0px !important;
+}
+
+.btn-group-sm>.btn i,
+.btn.btn-sm i {
+    font-size: 1.3rem;
+    padding-right: 0px !important;
+}
+
+.menu-active {
+    color: #fff!important;
+    background-color: rgba(255, 255, 255, .1) !important;
+    border-color: transparent !important;
+}
+
+.department .form-group {
+    margin-bottom: 0px;
+}
+
+.d-flex.flex-column.align-items-start.w-100.app-box {
+    font-size: 10px;
+    font-weight: normal !important;
+}
+
+.kanban-board .kanban-drag {
+    padding: 10px !important;
+}
+
+.kanban-container .kanban-board .kanban-drag .kanban-item {
+    border-radius: 0px !important;
+}
+
+.kanban-item {
+    padding: 10px;
+    margin-bottom: 4px !important;
+}
+
+.kanban-container .kanban-board {
+    margin-right: 0px !important;
+}
+
+.kanban-container .col-md-3 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.kanban-container .kanban-board {
+    border-right: 1px solid #ccd3da !important;
+    border-radius: 0px !important;
+}
+
+.kanban-board .kanban-drag {
+    min-height: 0px !important;
+}
+
+.kanban-container .kanban-board .kanban-board-header {
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+.kanban ul.pagination a {
+    padding: 9px 18px;
+    border: 1px solid #ddd !important;
+    color: #fdfdfd !important;
+}
+
+.kanban-board .kanban-drag {
+    height: 180px !important;
+    overflow-y: scroll;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 600 !important;
+    color: #3f4254;
+}
